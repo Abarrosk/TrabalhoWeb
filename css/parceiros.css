@@ -1,0 +1,40 @@
+/*texto*/
+.parceiros-intro {
+  max-width: 60ch;
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+/*cartões logos*/
+.logo-tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 160px;
+  padding: 1.5rem;
+  background: var(--text);
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  text-decoration: none;
+  transition: transform .3s, box-shadow .3s, border-color .3s;
+}
+
+.logo-tile img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform .3s;
+}
+
+.logo-tile:hover
+{
+  transform: translateY(-6px);
+  border-color: var(--blue);
+  box-shadow: 0 12px 28px var(--shadow1),
+              0 0 0 4px var(--shadow2);
+}
+
+.logo-tile:hover img {
+  transform: scale(1.08);
+}
+
