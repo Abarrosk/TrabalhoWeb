@@ -1,11 +1,173 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projecto WEB</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+  <body>
+    <!-- 1. O header ABRE aqui sem fechar na mesma linha -->
+    <header class="d-flex flex-column vh-100">
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <div class="container-fluid">
+          <!-- HOMEPAGE -->
+          <a
+            class="navbar-brand position-absolute start-50 translate-middle-x"
+            id="paginaInicial"
+            href="#"
+            >Homepage</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown" id="linkDropdown">
+                <img src="images/cesae-digital-logo.svg" alt="" />
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="loja.html">Cursos</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="media.html">Parceiros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="formulario.html">Formulario</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- CARROSSEL (flex-grow-1 estica a altura restante) -->
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide flex-grow-1 overflow-hidden"
+        data-bs-ride="carousel"
+      >
+        <!-- inner com h-100 -->
+        <div class="carousel-inner h-100">
+          <div class="carousel-item active h-100" data-bs-interval="6000">
+            <img
+              src="/images/carrossel/imagem1.jpg"
+              class="w-100 h-100 object-fit-cover d-block"
+              alt="..."
+            />
+          </div>
+
+          <div class="carousel-item h-100" data-bs-interval="6000">
+            <img
+              src="/images/carrossel/imagem2.jpg"
+              class="w-100 h-100 object-fit-cover d-block"
+              alt="..."
+            />
+          </div>
+
+          <div class="carousel-item h-100" data-bs-interval="6000">
+            <img
+              src="/images/carrossel/imagem3.jpg"
+              class="w-100 h-100 object-fit-cover d-block"
+              alt="..."
+            />
+          </div>
+
+          <div class="carousel-item h-100" data-bs-interval="6000">
+            <img
+              src="/images/carrossel/imagem4.jpg"
+              class="w-100 h-100 object-fit-cover d-block"
+              alt="..."
+            />
+          </div>
+
+          <div class="carousel-item h-100" data-bs-interval="6000">
+            <img
+              src="/images/carrossel/imagem5.jpg"
+              class="w-100 h-100 object-fit-cover d-block"
+              alt="..."
+            />
+          </div>
+
+          <div class="carousel-item h-100" data-bs-interval="6000">
+            <img
+              src="/images/carrossel/imagem6.jpg"
+              class="w-100 h-100 object-fit-cover d-block"
+              alt="..."
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. O header FECHA apenas aqui -->
+    </header>
+    <!-- **************************************************************************************** -->
+    <div class="container-fluid">
+      <div class="row mt-5">
+        <div class="card" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="images/comics.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="images/gaming.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="images/boxing.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

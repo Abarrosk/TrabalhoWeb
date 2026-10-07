@@ -1,0 +1,13 @@
+:root {
+  --bg: #1c0d2e;
+  --dark-purple: #2a1545;
+  --purple: #6b3fa0;
+  --lilac: #9b5dc4;
+  --pink: #e6007e;
+  --blue: #00a3e0;
+  --text: #f4effa;
+  --shadow: #00a3e000;
+  --shadow1: rgba(0, 163, 224, 0.35);
+  --shadow2: rgba(230, 0, 126, 0.25);
+  --gradient: linear-gradient(90deg, #00a3e0 0%, #6b3fa0 50%);
+}
