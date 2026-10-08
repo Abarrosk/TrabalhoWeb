@@ -11,3 +11,13 @@
   --shadow2: rgba(230, 0, 126, 0.25);
   --gradient: linear-gradient(90deg, #00a3e0 0%, #6b3fa0 50%);
 }
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255, 0.5);
+  font-size: 70px;
+  opacity: 7;
+}
