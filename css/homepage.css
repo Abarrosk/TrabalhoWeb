@@ -25,21 +25,4 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-.centrado {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: rgb(255, 255, 255, 0.5);
-  font-size: 50px;
-}
 
-/* .superiorDireito {
-  position: absolute;
-  top: 8px;
-  right: 16px;
-  transform: translate(-50%, -50%);
-  color: rgb(255, 255, 255, 0.5);
-  font-size: 50px;
-  opacity: 7;
-} */
