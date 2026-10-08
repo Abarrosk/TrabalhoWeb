@@ -18,11 +18,9 @@
 
 body,
 #barraNavegacao {
-  background-color: var(--lilac);
+  background-color: var(--dark-purple);
 }
 
 body {
   font-family: "Inter", sans-serif;
 }
-
-
