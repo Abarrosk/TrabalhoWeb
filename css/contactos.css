@@ -1,0 +1,38 @@
+.html {
+  font-family: "Inter", sans-serif;
+}
+
+h4 {
+  color: white;
+  margin-bottom: 30px;
+}
+
+/* cor da secção / curvatura inferior esquerda / espaçamento */
+.top {
+  background-color: #1c0d2e;
+  border-bottom-left-radius: 40px;
+  padding: 3rem 3rem;
+}
+/* cor e tamanho do texto */
+.top p {
+  color: white;
+  font-size: 12px;
+}
+
+.cor {
+  padding: 10px 20px;
+  width: 35vw;
+  color: black;
+  background-color: white;
+  z-index: 1;
+  margin: -110px 0 0 30px;
+}
+
+label {
+  font-size: 12px;
+}
+
+.form-control {
+  width: 30vw;
+  height: 5vh;
+}
