@@ -1,0 +1,67 @@
+:root {
+  --bg: #1C0D2E;
+  --dark-purple: #2A1545;
+  --purple: #6B3FA0;
+  --lilac: #9B5DC4;
+  --pink: #E6007E;
+  --blue: #00A3E0;
+  --text: #F4EFFA;
+  --shadow:#00a3e000;
+  --shadow1:rgba(0, 163, 224, .35);
+  --shadow2:rgba(230, 0, 126, .25);
+  --gradient: linear-gradient(90deg, #00A3E0 0%, #6B3FA0 50%);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+
+
+/***Footer***/
+.footer-cesae {
+  background: var(--dark-purple);
+  border-top: 1px solid var(--purple);
+  color: var(--text);
+}
+
+/* títulos colunas */
+.footer-cesae h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--lilac);
+  margin-bottom: 1rem;
+}
+
+/* links */
+.footer-cesae a {
+  color: var(--text);
+  opacity: .75;
+  text-decoration: none;
+}
+
+.footer-cesae a:hover {
+  color: var(--blue);
+  opacity: 1;
+}
+
+.footer-cesae a.footer-logo {
+  opacity: 1;
+}
+
+/* texto*/
+.texto-suave {
+  opacity: .75;
+}
+
+/* linha/ divider */
+.footer-linha {
+  border-color: var(--purple);
+  opacity: 1;
+}
+
+/* espaço entre os itens das listas de links */
+.footer-cesae li {
+  margin-bottom: .5rem;
+}
