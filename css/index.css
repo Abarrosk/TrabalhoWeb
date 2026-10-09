@@ -16,11 +16,45 @@
   --gradient: linear-gradient(90deg, #00a3e0 0%, #6b3fa0 50%);
 }
 
-body,
-#barraNavegacao {
+body {
+  background-color: var(--bg);
+  font-family: "Inter", sans-serif;
+}
+
+.navbar {
+  background-color: var(--dark-purple);
+  border-bottom: 2px solid var(--purple);
+}
+
+.navbar a {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--lilac);
+  margin-bottom: 1rem;
+}
+
+.card-body {
   background-color: var(--dark-purple);
 }
 
-body {
-  font-family: "Inter", sans-serif;
+.card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--lilac);
+  margin-bottom: 1rem;
+}
+
+.card-text,
+.card-body a {
+  color: var(--text);
+  opacity: 0.75;
+  text-decoration: none;
+}
+
+.position-absolute {
+  color: var(--text);
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  opacity: 0.75;
 }
