@@ -1,12 +1,23 @@
 /* font */
+:root {
+  --bg: #1c0d2e;
+  --dark-purple: #2a1545;
+  --purple: #6b3fa0;
+  --lilac: #9b5dc4;
+  --pink: #e6007e;
+  --blue: #00a3e0;
+  --text: #f4effa;
+  --shadow: #00a3e000;
+  --shadow1: rgba(0, 163, 224, 0.35);
+  --shadow2: rgba(230, 0, 126, 0.25);
+  --gradient: linear-gradient(90deg, #00a3e0 0%, #6b3fa0 50%);
+}
+
 .html {
   font-family: "Inter", sans-serif;
+  color: var(--text);
 }
 /* titulos */
-h4 {
-  color: white;
-  margin-bottom: 30px;
-}
 
 /* cor da secção / curvatura inferior esquerda / espaçamento */
 .top {
@@ -54,4 +65,26 @@ label {
 
 option {
   font-size: 10px;
+}
+
+/* mobile  */
+@media (max-width: 576px) {
+  .cor {
+    padding: 10px 20px;
+    width: 70vw;
+    background-color: white;
+    z-index: 1;
+    margin: -110px 0 0 50px;
+  }
+  .form-control {
+    width: 50vw;
+    height: 4vh;
+    font-size: 10px;
+  }
+
+  .form-select {
+    width: 50vw;
+    height: 4vh;
+    font-size: 10px;
+  }
 }
