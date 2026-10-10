@@ -53,22 +53,127 @@
         <div class="mb-3 col-md-6">
           <div class="cor box-branca">
             <form action="">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Email address
-              </label>
-              <input
-                type="email"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="name@example.com"
-              />
-            </form>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Accusantium labore aliquid libero quisquam similique? Accusamus et
-              blanditiis maiores provident totam! Sequi voluptates quos rerum
-              optio eius blanditiis exercitationem ipsa. Repellendus.
-            </p>
+              <form action="#" method="post">
+
+                            <!-- Primeiro nome -->
+                            <div class="mb-3">
+                                <label for="primeiroNome" class="form-label">
+                                    Primeiro nome
+                                </label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="primeiroNome"
+                                    name="primeiroNome"
+                                    placeholder="Introduz o teu primeiro nome"
+                                    autocomplete="given-name"
+                                    required
+                                >
+                            </div>
+
+                            <!-- Último nome -->
+                            <div class="mb-3">
+                                <label for="ultimoNome" class="form-label">
+                                    Último nome
+                                </label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="ultimoNome"
+                                    name="ultimoNome"
+                                    placeholder="Introduz o teu último nome"
+                                    autocomplete="family-name"
+                                    required
+                                >
+                            </div>
+
+                            <!-- Email -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label">
+                                    Email
+                                </label>
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="email"
+                                    name="email"
+                                    placeholder="exemplo@email.com"
+                                    autocomplete="email"
+                                    required
+                                >
+                            </div>
+
+                            <!-- Telefone -->
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label">
+                                    Telefone
+                                </label>
+                                <input
+                                    type="tel"
+                                    class="form-control"
+                                    id="telefone"
+                                    name="telefone"
+                                    placeholder="+351 912 345 678"
+                                    autocomplete="tel"
+                                >
+                            </div>
+
+                            <!-- Melhor altura para contactar -->
+                            <div class="mb-3">
+                                <label for="dataContacto" class="form-label">
+                                    Melhor altura para contactar
+                                </label>
+                                <input
+                                    type="datetime-local"
+                                    class="form-control"
+                                    id="dataContacto"
+                                    name="dataContacto"
+                                >
+                            </div>
+
+                            <!-- Método de contacto -->
+                            <div class="mb-3">
+                                <label for="metodoContacto" class="form-label">
+                                    O melhor método de contacto
+                                </label>
+                                <select
+                                    class="form-select"
+                                    id="metodoContacto"
+                                    name="metodoContacto"
+                                    required
+                                >
+                                    <option value="" selected disabled>
+                                        Seleciona uma opção
+                                    </option>
+                                    <option value="email">Email</option>
+                                    <option value="telefone">Telefone</option>
+                                </select>
+                            </div>
+
+                            <!-- Informação adicional -->
+                            <div class="mb-4">
+                                <label for="informacaoAdicional" class="form-label">
+                                    Tem alguma informação adicional?
+                                </label>
+                                <textarea
+                                    class="form-control"
+                                    id="informacaoAdicional"
+                                    name="informacaoAdicional"
+                                    rows="10"
+                                    placeholder="Escreve aqui a tua mensagem..."
+                                ></textarea>
+                            </div>
+
+                            <!-- Botão de envio -->
+                            <button type="submit" class="btn btn-primary btn-sm me-3 w-40">
+                                Enviar
+                            </button>
+                            <button type="reset" class="btn btn-primary btn-sm w-40">
+                                Reset
+                            </button>
+
+                        </form>
+            
           </div>
         </div>
       </div>

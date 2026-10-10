@@ -1,7 +1,8 @@
+/* font */
 .html {
   font-family: "Inter", sans-serif;
 }
-
+/* titulos */
 h4 {
   color: white;
   margin-bottom: 30px;
@@ -18,7 +19,7 @@ h4 {
   color: white;
   font-size: 12px;
 }
-
+/* box do formulário */
 .cor {
   padding: 10px 20px;
   width: 35vw;
@@ -27,12 +28,30 @@ h4 {
   z-index: 1;
   margin: -110px 0 0 30px;
 }
-
+/* tamannho da font dos labels */
 label {
-  font-size: 12px;
+  font-size: 11px;
 }
-
+/* tamanho das caixas de input do formulário */
 .form-control {
   width: 30vw;
   height: 5vh;
+  font-size: 10px;
+}
+
+/* tamanho e estilo do texto dos inputs */
+.form-control::placeholder {
+  font-size: 10px;
+  font-style: italic;
+}
+
+.form-select {
+  width: 30vw;
+  height: 6.5vh;
+  font-size: 10px;
+  font-style: italic;
+}
+
+option {
+  font-size: 10px;
 }
