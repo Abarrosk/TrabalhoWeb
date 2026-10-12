@@ -22,13 +22,14 @@ body {
 }
 
 .card-body {
-  background-color: var(--dark-purple);
+  background-color: #3a1d62;
+  border-top: 3px solid var(--blue);
 }
 
 .card-title {
   font-size: 1rem;
   font-weight: 600;
-  color: var(--lilac);
+  color: #c9a3ec;
   margin-bottom: 1rem;
 }
 

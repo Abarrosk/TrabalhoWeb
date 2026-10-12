@@ -5,6 +5,7 @@
   --lilac: #9b5dc4;
   --pink: #e6007e;
   --blue: #00a3e0;
+  --light-blue: #55d2ff;
   --text: #f4effa;
   --shadow: #00a3e000;
   --shadow1: rgba(0, 163, 224, 0.35);
@@ -38,14 +39,85 @@ body {
   opacity: 1;
 }
 
+/* link de destaque: Cursos */
+.navbar .navbar-nav .nav-cursos {
+  display: inline-block; /*impede q estique a toda a largura no telm*/
+  background: var(--blue);
+  color: var(--text);
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  box-shadow: 0 0 14px var(--shadow2);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.navbar .navbar-nav .nav-cursos:hover {
+  background: var(--pink);
+  color: var(--text);
+  box-shadow: 0 0 14px var(--shadow1);
+}
+
 /* logo clicável: sem padding vertical extra para ficar alinhado com os links */
 .navbar-logo {
-  --bs-nav-link-padding-y: 0;
+  padding: 0;
 }
 
 .navbar-logo img {
   display: block;
 }
+
+/* botão do menu (telm) visível no fundo escuro */
+.navbar .navbar-toggler {
+  background: transparent;
+  border: 1px solid var(--purple);
+}
+
+.navbar .navbar-toggler:focus {
+  box-shadow: 0 0 0 0.2rem var(--shadow1);
+}
+
+.navbar .navbar-toggler-icon {
+  filter: invert(1); /* ícone passa de escuro a branco */
+}
+
+/* pesquisa - navbar */
+.navbar-search {
+  width: 100%;
+}
+
+.navbar-search .form-control {
+  min-width: 0;
+  font-size: 1rem;
+  padding: 0.55rem 0.9rem;
+  background: var(--bg);
+  border: 1px solid var(--purple);
+  color: var(--text);
+}
+
+.navbar-search .form-control::placeholder {
+  color: var(--lilac);
+  opacity: 0.8;
+}
+
+.navbar-search .form-control:focus {
+  background: var(--bg);
+  color: var(--text);
+  border-color: var(--blue);
+  box-shadow: 0 0 0 0.2rem var(--shadow1);
+}
+
+.btn-pesquisar {
+  background: var(--purple);
+  color: var(--text);
+  border: 0;
+  padding: 0.55rem 0.9rem;
+}
+
+.btn-pesquisar:hover,
+.btn-pesquisar:focus {
+  background: var(--blue);
+  color: #fff;
+}
+
 
 /***Footer***/
 .footer-cesae {
@@ -92,4 +164,17 @@ body {
 /* espaço entre os itens das listas de links */
 .footer-cesae li {
   margin-bottom: 0.5rem;
+}
+
+/****/
+@media (min-width: 992px) {
+  .navbar-search {
+    width: 340px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+    margin-top: 0.75rem; 
+  }
 }
