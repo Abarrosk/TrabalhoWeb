@@ -22,7 +22,7 @@
       <nav class="navbar navbar-expand-sm navbar-light">
         <div class="container-fluid">
           <a
-            class="navbar-brand position-absolute start-50 translate-middle-x"
+            class="navbar-brand"
             id="paginaInicial"
             href=""
             >Homepage</a
@@ -30,7 +30,7 @@
           <!-- Botao que aparece quando estamos em vista de telemovel -->
           <button
             type="button"
-            class="navbar-toggler btn btn-secondary mb-3"
+            class="navbar-toggler btn btn-secondary"
             data-bs-toggle="collapse"
             data-bs-target="#collapsibleNavbar"
           >
@@ -38,9 +38,14 @@
           </button>
           <!-- FIM - Botao que aparece quando estamos em vista de telemovel -->
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav align-items-sm-center gap-2 gap-sm-3">
               <li class="nav-item dropdown" id="linkDropdown">
-                <img src="/images/logo/logo_letras_brancas.svg" alt="" />
+                <a class="nav-link navbar-logo" href="">
+                  <img
+                    src="/images/logo/logo_letras_brancas.svg"
+                    alt="CESAE Digital"
+                  />
+                </a>
               </li>
 
               <li class="nav-item">
@@ -67,91 +72,98 @@
       >
         <div class="carousel-inner h-100">
           <!--------------------1º Carrossel------------------------>
-          <div class="carousel-item active h-100" data-bs-interval="2000">
+          <div class="carousel-item active h-100" data-bs-interval="5000">
             <img
               src="/images/carrossel/imagem1.jpg"
               class="w-100 h-100 object-fit-cover d-block"
               alt="..."
             />
-            <div
-              class="position-absolute top-50 start-50 translate-middle p-3 display-md-3 text-center text-md-nowrap"
-            >
+            <div class="carousel-caption carousel-texto fs-1">
               Partilhar ideias. Crescer em equipa.
             </div>
           </div>
           <!--------------------2º Carrossel------------------------>
-          <div class="carousel-item h-100" data-bs-interval="2000">
+          <div class="carousel-item h-100" data-bs-interval="5000">
             <img
               src="/images/carrossel/imagem2.jpg"
               class="w-100 h-100 object-fit-cover d-block"
               alt="..."
             />
-            <div
-              class="position-absolute top-0 end-0 p-4 display-md-3 text-end text-md-nowrap"
-            >
+            <div class="carousel-caption carousel-texto fs-1">
               Transforma ideias em código.
             </div>
           </div>
           <!--------------------3º Carrossel------------------------>
-          <div class="carousel-item h-100" data-bs-interval="2000">
+          <div class="carousel-item h-100" data-bs-interval="5000">
             <img
               src="/images/carrossel/imagem3.jpg"
               class="w-100 h-100 object-fit-cover d-block"
               alt="..."
             />
-            <div
-              class="position-absolute top-50 start-0 translate-middle-y p-3 display-md-3 text-start text-md-nowrap"
-            >
+            <div class="carousel-caption carousel-texto fs-1">
               Segurança digital, sempre.
             </div>
           </div>
           <!--------------------4º Carrossel------------------------>
-          <div class="carousel-item h-100" data-bs-interval="2000">
+          <div class="carousel-item h-100" data-bs-interval="5000">
             <img
               src="/images/carrossel/imagem4.jpg"
               class="w-100 h-100 object-fit-cover d-block"
               alt="..."
             />
-            <div
-              class="position-absolute top-0 start-0 p-3 display-md-3 text-md-nowrap"
-            >
+            <div class="carousel-caption carousel-texto fs-1">
               Experiência que inspira.
             </div>
           </div>
           <!--------------------5º Carrossel------------------------>
-          <div class="carousel-item h-100" data-bs-interval="2000">
+          <div class="carousel-item h-100" data-bs-interval="5000">
             <img
               src="/images/carrossel/imagem5.jpg"
               class="w-100 h-100 object-fit-cover d-block"
               alt="..."
             />
-            <div
-              class="position-absolute top-50 start-50 translate-middle p-3 display-md-3 text-center text-md-nowrap"
-            >
+            <div class="carousel-caption carousel-texto fs-1">
               Domina as redes. Liga possibilidades.
             </div>
           </div>
           <!--------------------6º Carrossel------------------------>
-          <div class="carousel-item h-100" data-bs-interval="2000">
+          <div class="carousel-item h-100" data-bs-interval="5000">
             <img
               src="/images/carrossel/imagem6.jpg"
               class="w-100 h-100 object-fit-cover d-block"
               alt="..."
             />
-            <div
-              class="position-absolute top-0 start-50 translate-middle-x p-3 display-md-3 text-center text-md-nowrap"
-            >
+            <div class="carousel-caption carousel-texto fs-1">
               Competências para o mercado real.
             </div>
           </div>
         </div>
+        <!--------------------Setas do carrossel------------------------>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Seguinte</span>
+        </button>
       </div>
       <!--***************************Fim do CARROSSEL***************************-->
     </header>
 
     <!--***************************Cartões do curso***************************-->
     <div class="container-fluid my-3">
-      <div class="row g-4">
+      <div class="row g-4 cursos-row">
         <!--------------------1º cartão------------------------>
         <div class="col-12 col-md">
           <div class="card border-0 h-100">
@@ -184,7 +196,7 @@
               <h5 class="card-title">Computação em Cloud</h5>
               <p class="card-text">Inicio: 02 de Dezembro de 2026</p>
               <p class="card-text">400 horas</p>
-              <a href="/pages/cursos.html"><br />Ver detalhes do curso</a>
+              <a href="/pages/cursos.html">Ver detalhes do curso</a>
             </div>
           </div>
         </div>
@@ -239,7 +251,7 @@
               <h5 class="card-title">Redes e Cibersegurança</h5>
               <p class="card-text">Inicio: a definir</p>
               <p class="card-text">500 horas</p>
-              <a href="/pages/cursos.html"><br />Ver detalhes do curso</a>
+              <a href="/pages/cursos.html">Ver detalhes do curso</a>
             </div>
           </div>
         </div>
