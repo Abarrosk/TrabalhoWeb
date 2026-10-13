@@ -24,48 +24,66 @@
     />
   </head>
   <body>
+    <!--***************************Barra de navegação***************************-->
     <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-    
-          <a class="navbar-brand navbar-logo me-lg-5" href="/index.html">
-            <img src="/images/logo/logo_letras_brancas.svg" alt="CESAE Digital" />
-          </a>
-          <!-- Botao que aparece quando estamos em vista de telemovel -->
-          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- FIM - Botao que aparece quando estamos em vista de telemovel -->
-          <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav align-items-lg-center gap-2 gap-lg-3">
-    
-              <!-- DELETED: the whole <li> that held the logo (6 lines) -->
-    
-              <li class="nav-item">
-                <a class="nav-link nav-cursos" href="/pages/cursos.html">Cursos</a>
-              </li>
-    
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/parceiros.html">Parceiros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/contactos.html">Contactos</a>
-              </li>
-            </ul>
-    
-            <!-- Formulário - nav -->
-            <form class="d-flex ms-lg-auto mt-3 mt-lg-0 navbar-search" role="search" action="/pages/cursos.html"
-              method="get">
-              <input class="form-control" type="search" name="q" placeholder="Pesquisar cursos"
-                aria-label="Pesquisar cursos" />
-              <button class="btn btn-pesquisar ms-2" type="submit" aria-label="Pesquisar">
-                <i class="bi bi-search"></i>
-              </button>
-            </form>
-    
-          </div>
+      <div class="container-fluid">
+        <a class="navbar-brand navbar-logo me-lg-5" href="/index.html">
+          <img src="/images/logo/logo_letras_brancas.svg" alt="CESAE Digital" />
+        </a>
+        <!-- Botao que aparece quando estamos em vista de telemovel -->
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- FIM - Botao que aparece quando estamos em vista de telemovel -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav align-items-lg-center gap-2 gap-lg-3">
+            <!-- DELETED: the whole <li> that held the logo (6 lines) -->
+
+            <li class="nav-item">
+              <a class="nav-link nav-cursos" href="/pages/cursos.html"
+                >Cursos</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/parceiros.html">Parceiros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/contactos.html">Contactos</a>
+            </li>
+          </ul>
+
+          <!-- Formulário - nav -->
+          <form
+            class="d-flex ms-lg-auto mt-3 mt-lg-0 navbar-search"
+            role="search"
+            action="/pages/cursos.html"
+            method="get"
+          >
+            <input
+              class="form-control"
+              type="search"
+              name="q"
+              placeholder="Pesquisar cursos"
+              aria-label="Pesquisar cursos"
+            />
+            <button
+              class="btn btn-pesquisar ms-2"
+              type="submit"
+              aria-label="Pesquisar"
+            >
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
         </div>
-      </nav> 
-    
+      </div>
+    </nav>
+    <!--***************************Fim da barra de navegação***************************-->
     <!-- secção principal -->
     <section class="top">
       <div class="container">
@@ -105,7 +123,7 @@
 
         </div>
         <!-- coluna da direita -->
-         
+        
         <div class="right col-12 mb-3 col-md-6">
           <!-- div/caixa do formulario -->
           <div class="cor p-3">
@@ -127,101 +145,104 @@
                 />
               </div>
 
-              <!-- Último nome -->
-              <div class="mb-3">
-                <label for="ultimoNome" class="form-label"> Último nome </label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="ultimoNome"
-                  name="ultimoNome"
-                  placeholder="Introduz o seu último nome"
-                  autocomplete="family-name"
-                  required
-                />
-              </div>
+                <!-- Último nome -->
+                <div class="mb-3">
+                  <label for="ultimoNome" class="form-label">
+                    Último nome
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="ultimoNome"
+                    name="ultimoNome"
+                    placeholder="Introduz o seu último nome"
+                    autocomplete="family-name"
+                    required
+                  />
+                </div>
 
-              <!-- Email -->
-              <div class="mb-3">
-                <label for="email" class="form-label"> Email </label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  name="email"
-                  placeholder="exemplo@email.com"
-                  autocomplete="email"
-                  required
-                />
-              </div>
+                <!-- Email -->
+                <div class="mb-3">
+                  <label for="email" class="form-label"> Email </label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="exemplo@email.com"
+                    autocomplete="email"
+                    required
+                  />
+                </div>
 
-              <!-- Telefone -->
-              <div class="mb-3">
-                <label for="telefone" class="form-label"> Telefone </label>
-                <input
-                  type="tel"
-                  class="form-control"
-                  id="telefone"
-                  name="telefone"
-                  placeholder="+351 912 345 678"
-                  autocomplete="tel"
-                />
-              </div>
+                <!-- Telefone -->
+                <div class="mb-3">
+                  <label for="telefone" class="form-label"> Telefone </label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="telefone"
+                    name="telefone"
+                    placeholder="+351 912 345 678"
+                    autocomplete="tel"
+                  />
+                </div>
 
-              <!-- Melhor altura para contactar -->
-              <div class="mb-3">
-                <label for="dataContacto" class="form-label">
-                  Melhor altura para contactar
-                </label>
-                <input
-                  type="datetime-local"
-                  class="form-control"
-                  id="dataContacto"
-                  name="dataContacto"
-                />
-              </div>
+                <!-- Melhor altura para contactar -->
+                <div class="mb-3">
+                  <label for="dataContacto" class="form-label">
+                    Melhor altura para contactar
+                  </label>
+                  <input
+                    type="datetime-local"
+                    class="form-control"
+                    id="dataContacto"
+                    name="dataContacto"
+                  />
+                </div>
 
-              <!-- Método de contacto -->
-              <div class="mb-3">
-                <label for="metodoContacto" class="form-label">
-                  O melhor método de contacto
-                </label>
-                <select
-                  class="form-select"
-                  id="metodoContacto"
-                  name="metodoContacto"
-                  required
-                >
-                  <option value="" selected disabled>
-                    Selecione uma opção
-                  </option>
-                  <option value="email">Email</option>
-                  <option value="telefone">Telefone</option>
-                </select>
-              </div>
+                <!-- Método de contacto -->
+                <div class="mb-3">
+                  <label for="metodoContacto" class="form-label">
+                    O melhor método de contacto
+                  </label>
+                  <select
+                    class="form-select"
+                    id="metodoContacto"
+                    name="metodoContacto"
+                    required
+                  >
+                    <option value="" selected disabled>
+                      Selecione uma opção
+                    </option>
+                    <option value="email">Email</option>
+                    <option value="telefone">Telefone</option>
+                  </select>
+                </div>
 
-              <!-- Informação adicional -->
-              <div class="mb-4">
-                <label for="informacaoAdicional" class="form-label">
-                  Tem alguma informação adicional?
-                </label>
-                <textarea
-                  class="form-control"
-                  id="informacaoAdicional"
-                  name="informacaoAdicional"
-                  rows="10"
-                  placeholder="Escreva aqui a tua mensagem..."
-                ></textarea>
-              </div>
+                <!-- Informação adicional -->
+                <div class="mb-4">
+                  <label for="informacaoAdicional" class="form-label">
+                    Tem alguma informação adicional?
+                  </label>
+                  <textarea
+                    class="form-control"
+                    id="informacaoAdicional"
+                    name="informacaoAdicional"
+                    rows="10"
+                    placeholder="Escreva aqui a tua mensagem..."
+                  ></textarea>
+                </div>
 
-              <!-- Botão de envio -->
-              <button type="submit" class="btn btn-primary btn-sm me-3 w-40">
-                Enviar
-              </button>
-              <button type="reset" class="btn btn-primary btn-sm w-40">
-                Reset
-              </button>
-            </form>
+                <!-- Botão de envio -->
+                <button type="submit" class="btn btn-primary btn-sm me-3 w-40">
+                  Enviar
+                </button>
+                <button type="reset" class="btn btn-primary btn-sm w-40">
+                  Reset
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -245,14 +266,15 @@
                 alt="Porto"
               />
               <div class="card-body text-start bg-white">
-              <div class="card-title"><h5 class="h5 fw-bold mt-1">Porto</h5></div>
-                <div class="
-                card-address"><p class="address">
-                  <i class="bi bi-pin-map me-2"></i
-                  ><span
-                    >Rua Ciríaco Cardoso, 186 4150-212 Porto</span
-                  >
-                </p></div>
+                <div class="card-title">
+                  <h5 class="h5 fw-bold mt-1">Porto</h5>
+                </div>
+                <div class="card-address">
+                  <p class="address">
+                    <i class="bi bi-pin-map me-2"></i
+                    ><span>Rua Ciríaco Cardoso, 186 4150-212 Porto</span>
+                  </p>
+                </div>
                 <div class="card-contacts">
                 <a href="tel:+351226195200" class="contact-link contact-phone"
                   ><i class="bi bi-telephone"></i><span>226 195 200</span></a
@@ -264,8 +286,10 @@
               </div>
             </div>
           </div>
-          
-          <div class="col-12 col-sm-4 col-lg-4 mb-4 d-flex justify-content-center">
+
+          <div
+            class="col-12 col-sm-4 col-lg-4 mb-4 d-flex justify-content-center"
+          >
             <div class="card h-100">
               <img
                 src="../images/contactos/SãoJoãoDaMadeira.png"
@@ -273,14 +297,18 @@
                 alt="São João da Madeira"
               />
               <div class="card-body text-start bg-white">
-              <div class="card-title"><h5 class="h5 fw-bold mt-1">São João da Madeira</h5></div>
-                <div class="
-                card-address"><p class="address">
-                  <i class="bi bi-pin-map me-2"></i
-                  ><span
-                    >SANJOTEC - R. de Fundões 151, 3700-121 São João da Madeira</span
-                  >
-                </p></div>
+                <div class="card-title">
+                  <h5 class="h5 fw-bold mt-1">São João da Madeira</h5>
+                </div>
+                <div class="card-address">
+                  <p class="address">
+                    <i class="bi bi-pin-map me-2"></i
+                    ><span
+                      >SANJOTEC - R. de Fundões 151, 3700-121 São João da
+                      Madeira</span
+                    >
+                  </p>
+                </div>
                 <div class="card-contacts">
                 <a href="tel:+351256001923" class="contact-link contact-phone"
                   ><i class="bi bi-telephone"></i><span>256 001 923</span></a
@@ -293,7 +321,9 @@
             </div>
           </div>
 
-          <div class="col-12 col-sm-4 col-lg-4 mb-4 d-flex justify-content-center">
+          <div
+            class="col-12 col-sm-4 col-lg-4 mb-4 d-flex justify-content-center"
+          >
             <div class="card h-100">
               <img
                 src="../images/contactos/LecadaPalmeira.png"
@@ -301,14 +331,18 @@
                 alt="Leça da Palmeira"
               />
               <div class="card-body text-start bg-white">
-              <div class="card-title"><h5 class="h5 fw-bold mt-1">Leça da Palmeira</h5></div>
-                <div class="
-                card-address"><p class="address">
-                  <i class="bi bi-pin-map me-2"></i
-                  ><span
-                    >Av Dr. António Macedo, Edificio AEP - Formação Profissional 4450-617 Leça da Palmeira</span
-                  >
-                </p></div>
+                <div class="card-title">
+                  <h5 class="h5 fw-bold mt-1">Leça da Palmeira</h5>
+                </div>
+                <div class="card-address">
+                  <p class="address">
+                    <i class="bi bi-pin-map me-2"></i
+                    ><span
+                      >Av Dr. António Macedo, Edificio AEP - Formação
+                      Profissional 4450-617 Leça da Palmeira</span
+                    >
+                  </p>
+                </div>
                 <div class="card-contacts">
                 <a href="tel:+351229981975" class="contact-link contact-phone"
                   ><i class="bi bi-telephone"></i><span>229 981 975</span></a
@@ -321,7 +355,9 @@
             </div>
           </div>
 
-          <div class="col-12 col-sm-4 col-lg-4 mb-4 d-flex justify-content-center">
+          <div
+            class="col-12 col-sm-4 col-lg-4 mb-4 d-flex justify-content-center"
+          >
             <div class="card h-100">
               <img
                 src="../images/contactos/MarcoDeCanaveses.png"
@@ -329,14 +365,18 @@
                 alt="Marco de Canaveses"
               />
               <div class="card-body text-start bg-white">
-              <div class="card-title"><h5 class="h5 fw-bold mt-1">Marco de Canaveses</h5></div>
-                <div class="
-                card-address"><p class="address">
-                  <i class="bi bi-pin-map me-2"></i
-                  ><span
-                    >R. Visconde do Marco 197, 4630-273 Marco de Canaveses</span
-                  >
-                </p></div>
+                <div class="card-title">
+                  <h5 class="h5 fw-bold mt-1">Marco de Canaveses</h5>
+                </div>
+                <div class="card-address">
+                  <p class="address">
+                    <i class="bi bi-pin-map me-2"></i
+                    ><span
+                      >R. Visconde do Marco 197, 4630-273 Marco de
+                      Canaveses</span
+                    >
+                  </p>
+                </div>
                 <div class="card-contacts">
                 <a href="tel:+351255534268" class="contact-link contact-phone"
                   ><i class="bi bi-telephone"></i><span>255 534 268</span></a
@@ -349,7 +389,9 @@
             </div>
           </div>
 
-          <div class="col-12 col-sm-4 col-lg-4 mb-4 d-flex justify-content-center">
+          <div
+            class="col-12 col-sm-4 col-lg-4 mb-4 d-flex justify-content-center"
+          >
             <div class="card h-100">
               <img
                 src="../images/contactos/VilaDoConde.png"
@@ -357,14 +399,15 @@
                 alt="Vila do Conde"
               />
               <div class="card-body text-start bg-white">
-              <div class="card-title"><h5 class="h5 fw-bold mt-1">Vila do Conde</h5></div>
-                <div class="
-                card-address"><p class="address">
-                  <i class="bi bi-pin-map me-2"></i
-                  ><span
-                    >Av. Júlio Graça 558, 4480-672 Vila do Conde</span
-                  >
-                </p></div>
+                <div class="card-title">
+                  <h5 class="h5 fw-bold mt-1">Vila do Conde</h5>
+                </div>
+                <div class="card-address">
+                  <p class="address">
+                    <i class="bi bi-pin-map me-2"></i
+                    ><span>Av. Júlio Graça 558, 4480-672 Vila do Conde</span>
+                  </p>
+                </div>
                 <div class="card-contacts">
                 <a href="tel:+351252638018" class="contact-link contact-phone"
                   ><i class="bi bi-telephone"></i><span>252 638 018</span></a
@@ -377,7 +420,9 @@
             </div>
           </div>
 
-            <div class="col-12 col-sm-4 col-lg-4 mb-4 d-flex justify-content-center">
+          <div
+            class="col-12 col-sm-4 col-lg-4 mb-4 d-flex justify-content-center"
+          >
             <div class="card h-100">
               <img
                 src="../images/contactos/Viseu.png"
@@ -385,14 +430,17 @@
                 alt="Viseu"
               />
               <div class="card-body text-start bg-white">
-              <div class="card-title""><h5 class="h5 fw-bold mt-1">Viseu</h5></div>
-                <div class="
-                card-address"><p class="address">
-                  <i class="bi bi-pin-map me-2"></i
-                  ><span
-                    >Rua Almirante Afonso Cerqueira, 30 3510-007 Viseu</span
-                  >
-                </p></div>
+                <div class="card-title">
+                  <h5 class="h5 fw-bold mt-1">Viseu</h5>
+                </div>
+                <div class="card-address">
+                  <p class="address">
+                    <i class="bi bi-pin-map me-2"></i
+                    ><span
+                      >Rua Almirante Afonso Cerqueira, 30 3510-007 Viseu</span
+                    >
+                  </p>
+                </div>
                 <div class="card-contacts">
                 <a href="tel:+351232432217" class="contact-link contact-phone"
                   ><i class="bi bi-telephone"></i><span>232 432 217</span></a
@@ -404,13 +452,9 @@
               </div>
             </div>
           </div>
-
-          
-          
         </div>
-     
-    </section>
-</div>
+      </section>
+    </div>
     <!-- footer -->
     <footer class="footer-cesae pt-5 pb-3">
       <div class="container">

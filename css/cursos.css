@@ -17,29 +17,48 @@
 }
 
 .btn-filtro:hover,
-.btn-filtro:focus-visible {
+.btn-check:focus-visible + .btn-filtro {
   color: var(--blue);
   border-color: var(--blue);
   opacity: 1;
 }
 
-.btn-filtro.active {
+.btn-check:checked + .btn-filtro {
   color: var(--text);
   background: var(--purple);
   border-color: var(--purple);
   opacity: 1;
 }
 
+body:has(#f-ciberseguranca:checked)
+  .cursos-grid
+  > :not([data-categoria="ciberseguranca"]),
+body:has(#f-programacao:checked)
+  .cursos-grid
+  > :not([data-categoria="programacao"]),
+body:has(#f-cloud:checked) .cursos-grid > :not([data-categoria="cloud"]),
+body:has(#f-redes:checked) .cursos-grid > :not([data-categoria="redes"]),
+body:has(#f-servidores:checked)
+  .cursos-grid
+  > :not([data-categoria="servidores"]),
+body:has(#f-ia:checked) .cursos-grid > :not([data-categoria="ia"]) {
+  display: none;
+}
+
 /*cartões dos cursos*/
 .cursos-grid .card {
   border-radius: 1rem;
   overflow: hidden;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 
 .cursos-grid .card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 28px var(--shadow1), 0 0 0 4px var(--shadow2);
+  box-shadow:
+    0 12px 28px var(--shadow1),
+    0 0 0 4px var(--shadow2);
 }
 
 /* foto do curso; enquanto a foto não existir fica o fundo com o ícone */
