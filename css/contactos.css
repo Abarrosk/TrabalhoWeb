@@ -39,8 +39,9 @@ p {
   color: black;
   background-color: white;
   z-index: 1;
-  margin: -20px 0 0 30px;
+  margin: -30px 0 0 30px;
 }
+
 /* tamanho da font dos labels */
 label {
   font-size: 12px;
@@ -81,23 +82,28 @@ option {
 
 /* mobile  */
 @media (max-width: 575.98px) {
-  .right {
+  * {
+    outline: 1px solid red;
+  }
+
+  .imagem {
     align-items: center;
+    width: 90%;
   }
 
   .cor {
-    margin-top: 5vh;
     width: 80vw;
+    z-index: 0;
   }
 
   .form-control {
-    width: 70vw;
+    width: 60vw;
     height: 5vh;
     font-size: 12px;
   }
 
   .form-select {
-    width: 70vw;
+    width: 60vw;
     height: 5vh;
     font-size: 10px;
   }
@@ -158,7 +164,7 @@ option {
     min-height: 25vh;
   }
 
-  a {
+  .polo-card a {
     display: flex;
     flex-direction: column;
     align-items: center;

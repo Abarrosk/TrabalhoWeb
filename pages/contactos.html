@@ -24,12 +24,53 @@
     />
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+    
+          <a class="navbar-brand navbar-logo me-lg-5" href="/index.html">
+            <img src="/images/logo/logo_letras_brancas.svg" alt="CESAE Digital" />
+          </a>
+          <!-- Botao que aparece quando estamos em vista de telemovel -->
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- FIM - Botao que aparece quando estamos em vista de telemovel -->
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav align-items-lg-center gap-2 gap-lg-3">
+    
+              <!-- DELETED: the whole <li> that held the logo (6 lines) -->
+    
+              <li class="nav-item">
+                <a class="nav-link nav-cursos" href="/pages/cursos.html">Cursos</a>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/parceiros.html">Parceiros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/contactos.html">Contactos</a>
+              </li>
+            </ul>
+    
+            <!-- Formulário - nav -->
+            <form class="d-flex ms-lg-auto mt-3 mt-lg-0 navbar-search" role="search" action="/pages/cursos.html"
+              method="get">
+              <input class="form-control" type="search" name="q" placeholder="Pesquisar cursos"
+                aria-label="Pesquisar cursos" />
+              <button class="btn btn-pesquisar ms-2" type="submit" aria-label="Pesquisar">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+    
+          </div>
+        </div>
+      </nav> 
     
     <!-- secção principal -->
     <section class="top">
       <div class="container">
         <!-- div para fazer o flexbox -->
-        <div class="d-flex row g-4">
+        <div class="row g-4">
           <!-- div esquerda dentro da secção principal -->
           <div class="col-md-6 left">
             <h4 class="mb-4">Contactos</h4>
@@ -48,10 +89,11 @@
     <!-- secção do formulário -->
     <section>
       <!-- flexbox -->
-      <div class="d-flex row g-5">
+    <div class="container my-5">
+      <div class="form row g-5">
         <!-- coluna da esquerda -->
         <div id="esq" class="container mt-5 col-12 col-md-6">
-            <img class="mt-5 img-fluid" src="../images/contactos/office.jpg" alt="escritório">
+            <img class="imagem mt-5 img-fluid" src="../images/contactos/office.jpg" alt="escritório">
           <p class="mt-5 ps-4 pe-5">
             Se tiver alguma questão sobre os nossos cursos, pretender conhecer
             melhor as nossas parcerias ou obter mais informações sobre os nossos
@@ -61,11 +103,10 @@
             esclarecer as suas dúvidas e responder às suas questões.
           </p>
 
-          
         </div>
         <!-- coluna da direita -->
          
-        <div class="right container col-12 mb-3 col-md-6">
+        <div class="right col-12 mb-3 col-md-6">
           <!-- div/caixa do formulario -->
           <div class="cor p-3">
             <!-- Formulário -->
@@ -184,6 +225,7 @@
           </div>
         </div>
       </div>
+      </div>
     </section>
 <!-- secção de apresentação dos polos -->
     <section class=" mt-5">
@@ -194,7 +236,7 @@
           dos nossos Polos.
         </p>
         </div> 
-        <div class="row mt-5">
+        <div class="polo-card row mt-5">
           <div class="col-12 col-sm-4 col-lg-4 mb-4 d-flex justify-content-center">
             <div class="card h-100">
               <img
@@ -212,12 +254,12 @@
                   >
                 </p></div>
                 <div class="card-contacts">
-                <a href="#" class="contact-link contact-phone"
+                <a href="tel:+351226195200" class="contact-link contact-phone"
                   ><i class="bi bi-telephone"></i><span>226 195 200</span></a
                 ><br />
-                <a href="#" class="contact-link contact-email"
+                <a href="mailto:porto@cesae.pt" class="contact-link contact-email"
                   ><i class="bi bi-envelope"></i
-                  ><span> porto@cesae.pt</span></a
+                  ><span>porto@cesae.pt</span></a
                 ></div>
               </div>
             </div>
@@ -240,10 +282,10 @@
                   >
                 </p></div>
                 <div class="card-contacts">
-                <a href="#" class="contact-link contact-phone"
+                <a href="tel:+351256001923" class="contact-link contact-phone"
                   ><i class="bi bi-telephone"></i><span>256 001 923</span></a
                 ><br />
-                <a href="#" class="contact-link contact-email"
+                <a href="mailto:sjmadeira@cesae.pt" class="contact-link contact-email"
                   ><i class="bi bi-envelope"></i
                   ><span>sjmadeira@cesae.pt</span></a
                 ></div>
@@ -268,10 +310,10 @@
                   >
                 </p></div>
                 <div class="card-contacts">
-                <a href="#" class="contact-link contact-phone"
+                <a href="tel:+351229981975" class="contact-link contact-phone"
                   ><i class="bi bi-telephone"></i><span>229 981 975</span></a
                 ><br />
-                <a href="#" class="contact-link contact-email"
+                <a href="mailto:lecadapalmeira@cesae.pt" class="contact-link contact-email"
                   ><i class="bi bi-envelope"></i
                   ><span>lecadapalmeira@cesae.pt</span></a
                 ></div>
@@ -296,10 +338,10 @@
                   >
                 </p></div>
                 <div class="card-contacts">
-                <a href="#" class="contact-link contact-phone"
+                <a href="tel:+351255534268" class="contact-link contact-phone"
                   ><i class="bi bi-telephone"></i><span>255 534 268</span></a
                 ><br />
-                <a href="#" class="contact-link contact-email"
+                <a href="mailto:marcodecanaveses@cesae.p" class="contact-link contact-email"
                   ><i class="bi bi-envelope"></i
                   ><span>marcodecanaveses@cesae.pt</span></a
                 ></div>
@@ -324,10 +366,10 @@
                   >
                 </p></div>
                 <div class="card-contacts">
-                <a href="#" class="contact-link contact-phone"
+                <a href="tel:+351252638018" class="contact-link contact-phone"
                   ><i class="bi bi-telephone"></i><span>252 638 018</span></a
                 ><br />
-                <a href="#" class="contact-link contact-email"
+                <a href="mailto:viladoconde@cesae.pt" class="contact-link contact-email"
                   ><i class="bi bi-envelope"></i
                   ><span>viladoconde@cesae.pt</span></a
                 ></div>
@@ -355,7 +397,7 @@
                 <a href="tel:+351232432217" class="contact-link contact-phone"
                   ><i class="bi bi-telephone"></i><span>232 432 217</span></a
                 ><br />
-                <a href="#" class="contact-link contact-email"
+                <a href="mailto:viseu@cesae.pt" class="contact-link contact-email"
                   ><i class="bi bi-envelope"></i
                   ><span>viseu@cesae.pt</span></a
                 ></div>
@@ -377,7 +419,7 @@
           <div class="col-12 col-md-6 col-lg-3">
             <a href="../index.html" class="footer-logo">
               <img
-                src="../images/cesae-digital-logo-fundo-branco.svg"
+                src="../images/logo/cesae-digital-logo-fundo-branco.svg"
                 alt="CESAE Digital"
                 height="44"
               />
@@ -455,5 +497,10 @@
         </div>
       </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
