@@ -28,10 +28,7 @@
     <!--***************************Barra de navegação***************************-->
     <nav class="navbar navbar-expand-sm navbar-light">
       <div class="container-fluid">
-        <a
-          class="navbar-brand"
-          id="paginaInicial"
-          href="../index.html"
+        <a class="navbar-brand" id="paginaInicial" href="../index.html"
           >Homepage</a
         >
         <!-- Botao que aparece quando estamos em vista de telemovel -->
@@ -73,10 +70,7 @@
 
     <!--***************************Cursos***************************-->
     <!--
-      FOTOS DOS CURSOS: basta colocar as imagens (.jpg) na pasta /images/cursos/
-      com estes nomes. Enquanto não existirem, o card mostra um ícone no lugar da foto.
-         images/cursos/fundamentos-ciberseguranca.jpg
-         images/cursos/ethical-hacking.jpg
+
          images/cursos/desenvolvimento-web-full-stack.jpg
          images/cursos/programacao-python.jpg
          images/cursos/fundamentos-aws.jpg
@@ -96,14 +90,70 @@
       </p>
 
       <!-- Filtros por área -->
-      <div class="d-flex flex-wrap gap-2 mb-5" role="group" aria-label="Filtrar cursos por área">
-          <button type="button" class="btn btn-filtro active" data-filtro="todos" aria-pressed="true">Todos</button>
-          <button type="button" class="btn btn-filtro" data-filtro="ciberseguranca" aria-pressed="false">Cibersegurança</button>
-          <button type="button" class="btn btn-filtro" data-filtro="programacao" aria-pressed="false">Programação</button>
-          <button type="button" class="btn btn-filtro" data-filtro="cloud" aria-pressed="false">Cloud</button>
-          <button type="button" class="btn btn-filtro" data-filtro="redes" aria-pressed="false">Redes</button>
-          <button type="button" class="btn btn-filtro" data-filtro="servidores" aria-pressed="false">Servidores</button>
-          <button type="button" class="btn btn-filtro" data-filtro="ia" aria-pressed="false">Inteligência Artificial</button>
+      <div
+        class="d-flex flex-wrap gap-2 mb-5"
+        role="group"
+        aria-label="Filtrar cursos por área"
+      >
+        <input
+          type="radio"
+          class="btn-check"
+          name="area"
+          id="f-todos"
+          autocomplete="off"
+          checked
+        />
+        <label class="btn btn-filtro" for="f-todos">Todos</label>
+        <input
+          type="radio"
+          class="btn-check"
+          name="area"
+          id="f-ciberseguranca"
+          autocomplete="off"
+        />
+        <label class="btn btn-filtro" for="f-ciberseguranca"
+          >Cibersegurança</label
+        >
+        <input
+          type="radio"
+          class="btn-check"
+          name="area"
+          id="f-programacao"
+          autocomplete="off"
+        />
+        <label class="btn btn-filtro" for="f-programacao">Programação</label>
+        <input
+          type="radio"
+          class="btn-check"
+          name="area"
+          id="f-cloud"
+          autocomplete="off"
+        />
+        <label class="btn btn-filtro" for="f-cloud">Cloud</label>
+        <input
+          type="radio"
+          class="btn-check"
+          name="area"
+          id="f-redes"
+          autocomplete="off"
+        />
+        <label class="btn btn-filtro" for="f-redes">Redes</label>
+        <input
+          type="radio"
+          class="btn-check"
+          name="area"
+          id="f-servidores"
+          autocomplete="off"
+        />
+        <label class="btn btn-filtro" for="f-servidores">Servidores</label>
+        <input
+          type="radio"
+          class="btn-check"
+          name="area"
+          id="f-ia"
+          autocomplete="off"
+        />
+        <label class="btn btn-filtro" for="f-ia">Inteligência Artificial</label>
       </div>
 
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 cursos-grid">
@@ -116,15 +166,18 @@
                 src="../images/cards/card5.jpg"
                 alt="Redes e Cibersegurança"
                 loading="lazy"
-                onerror="this.remove()"
               />
             </div>
             <div class="card-body">
               <span class="curso-categoria">Cibersegurança</span>
               <h2 class="card-title">Redes e Cibersegurança</h2>
-              <p class="card-text flex-grow-1">Configuração e proteção de redes empresariais, com deteção e resposta a ameaças.</p>
+              <p class="card-text flex-grow-1">
+                Configuração e proteção de redes empresariais, com deteção e
+                resposta a ameaças.
+              </p>
               <p class="card-text mb-2">
-                <i class="bi bi-calendar-event me-2" aria-hidden="true"></i>Início: a definir
+                <i class="bi bi-calendar-event me-2" aria-hidden="true"></i
+                >Início: a definir
               </p>
               <p class="card-text mb-3">
                 <i class="bi bi-clock me-2" aria-hidden="true"></i>500 horas
@@ -142,15 +195,18 @@
                 src="../images/cursos/fundamentos-ciberseguranca.jpg"
                 alt="Fundamentos de Cibersegurança"
                 loading="lazy"
-                onerror="this.remove()"
               />
             </div>
             <div class="card-body">
               <span class="curso-categoria">Cibersegurança</span>
               <h2 class="card-title">Fundamentos de Cibersegurança</h2>
-              <p class="card-text flex-grow-1">Conceitos essenciais de segurança, boas práticas e gestão de riscos para qualquer profissional de IT.</p>
+              <p class="card-text flex-grow-1">
+                Conceitos essenciais de segurança, boas práticas e gestão de
+                riscos para qualquer profissional de IT.
+              </p>
               <p class="card-text mb-2">
-                <i class="bi bi-calendar-event me-2" aria-hidden="true"></i>Início: 19 de Janeiro de 2027
+                <i class="bi bi-calendar-event me-2" aria-hidden="true"></i
+                >Início: 19 de Janeiro de 2027
               </p>
               <p class="card-text mb-3">
                 <i class="bi bi-clock me-2" aria-hidden="true"></i>60 horas
@@ -168,15 +224,18 @@
                 src="../images/cursos/ethical-hacking.jpg"
                 alt="Ethical Hacking e Testes de Intrusão"
                 loading="lazy"
-                onerror="this.remove()"
               />
             </div>
             <div class="card-body">
               <span class="curso-categoria">Cibersegurança</span>
               <h2 class="card-title">Ethical Hacking e Testes de Intrusão</h2>
-              <p class="card-text flex-grow-1">Aprende a pensar como um atacante para identificar e corrigir vulnerabilidades em sistemas e aplicações.</p>
+              <p class="card-text flex-grow-1">
+                Aprende a pensar como um atacante para identificar e corrigir
+                vulnerabilidades em sistemas e aplicações.
+              </p>
               <p class="card-text mb-2">
-                <i class="bi bi-calendar-event me-2" aria-hidden="true"></i>Início: 08 de Março de 2027
+                <i class="bi bi-calendar-event me-2" aria-hidden="true"></i
+                >Início: 08 de Março de 2027
               </p>
               <p class="card-text mb-3">
                 <i class="bi bi-clock me-2" aria-hidden="true"></i>150 horas
@@ -194,15 +253,20 @@
                 src="../images/cards/card3.jpg"
                 alt="Programação em Frontend e Inteligência Artificial"
                 loading="lazy"
-                onerror="this.remove()"
               />
             </div>
             <div class="card-body">
               <span class="curso-categoria">Programação</span>
-              <h2 class="card-title">Programação em Frontend e Inteligência Artificial</h2>
-              <p class="card-text flex-grow-1">HTML, CSS e JavaScript aliados a ferramentas de IA para criar interfaces modernas.</p>
+              <h2 class="card-title">
+                Programação em Frontend e Inteligência Artificial
+              </h2>
+              <p class="card-text flex-grow-1">
+                HTML, CSS e JavaScript aliados a ferramentas de IA para criar
+                interfaces modernas.
+              </p>
               <p class="card-text mb-2">
-                <i class="bi bi-calendar-event me-2" aria-hidden="true"></i>Início: 01 de Fevereiro de 2027
+                <i class="bi bi-calendar-event me-2" aria-hidden="true"></i
+                >Início: 01 de Fevereiro de 2027
               </p>
               <p class="card-text mb-3">
                 <i class="bi bi-clock me-2" aria-hidden="true"></i>100 horas
@@ -220,15 +284,20 @@
                 src="../images/cards/card4.jpg"
                 alt="Tecnologias e Programação de Sistemas de Informação"
                 loading="lazy"
-                onerror="this.remove()"
               />
             </div>
             <div class="card-body">
               <span class="curso-categoria">Programação</span>
-              <h2 class="card-title">Tecnologias e Programação de Sistemas de Informação</h2>
-              <p class="card-text flex-grow-1">Formação completa em programação, bases de dados e desenvolvimento de sistemas de informação.</p>
+              <h2 class="card-title">
+                Tecnologias e Programação de Sistemas de Informação
+              </h2>
+              <p class="card-text flex-grow-1">
+                Formação completa em programação, bases de dados e
+                desenvolvimento de sistemas de informação.
+              </p>
               <p class="card-text mb-2">
-                <i class="bi bi-calendar-event me-2" aria-hidden="true"></i>Início: 15 de Janeiro de 2027
+                <i class="bi bi-calendar-event me-2" aria-hidden="true"></i
+                >Início: 15 de Janeiro de 2027
               </p>
               <p class="card-text mb-3">
                 <i class="bi bi-clock me-2" aria-hidden="true"></i>900 horas
@@ -246,15 +315,18 @@
                 src="../images/cursos/desenvolvimento-web-full-stack.jpg"
                 alt="Desenvolvimento Web Full Stack"
                 loading="lazy"
-                onerror="this.remove()"
               />
             </div>
             <div class="card-body">
               <span class="curso-categoria">Programação</span>
               <h2 class="card-title">Desenvolvimento Web Full Stack</h2>
-              <p class="card-text flex-grow-1">Do frontend ao backend: constrói aplicações web completas com bases de dados e APIs.</p>
+              <p class="card-text flex-grow-1">
+                Do frontend ao backend: constrói aplicações web completas com
+                bases de dados e APIs.
+              </p>
               <p class="card-text mb-2">
-                <i class="bi bi-calendar-event me-2" aria-hidden="true"></i>Início: 22 de Fevereiro de 2027
+                <i class="bi bi-calendar-event me-2" aria-hidden="true"></i
+                >Início: 22 de Fevereiro de 2027
               </p>
               <p class="card-text mb-3">
                 <i class="bi bi-clock me-2" aria-hidden="true"></i>600 horas
@@ -272,15 +344,18 @@
                 src="../images/cursos/programacao-python.jpg"
                 alt="Programação em Python"
                 loading="lazy"
-                onerror="this.remove()"
               />
             </div>
             <div class="card-body">
               <span class="curso-categoria">Programação</span>
               <h2 class="card-title">Programação em Python</h2>
-              <p class="card-text flex-grow-1">Lógica de programação e Python do zero, com projetos práticos de automação e análise de dados.</p>
+              <p class="card-text flex-grow-1">
+                Lógica de programação e Python do zero, com projetos práticos de
+                automação e análise de dados.
+              </p>
               <p class="card-text mb-2">
-                <i class="bi bi-calendar-event me-2" aria-hidden="true"></i>Início: 04 de Dezembro de 2026
+                <i class="bi bi-calendar-event me-2" aria-hidden="true"></i
+                >Início: 04 de Dezembro de 2026
               </p>
               <p class="card-text mb-3">
                 <i class="bi bi-clock me-2" aria-hidden="true"></i>120 horas
@@ -298,15 +373,18 @@
                 src="../images/cards/card2.jpg"
                 alt="Computação em Cloud"
                 loading="lazy"
-                onerror="this.remove()"
               />
             </div>
             <div class="card-body">
               <span class="curso-categoria">Cloud</span>
               <h2 class="card-title">Computação em Cloud</h2>
-              <p class="card-text flex-grow-1">Arquiteturas, serviços e boas práticas para desenhar e gerir infraestruturas na cloud.</p>
+              <p class="card-text flex-grow-1">
+                Arquiteturas, serviços e boas práticas para desenhar e gerir
+                infraestruturas na cloud.
+              </p>
               <p class="card-text mb-2">
-                <i class="bi bi-calendar-event me-2" aria-hidden="true"></i>Início: 02 de Dezembro de 2026
+                <i class="bi bi-calendar-event me-2" aria-hidden="true"></i
+                >Início: 02 de Dezembro de 2026
               </p>
               <p class="card-text mb-3">
                 <i class="bi bi-clock me-2" aria-hidden="true"></i>400 horas
@@ -324,15 +402,18 @@
                 src="../images/cursos/fundamentos-aws.jpg"
                 alt="Fundamentos de AWS"
                 loading="lazy"
-                onerror="this.remove()"
               />
             </div>
             <div class="card-body">
               <span class="curso-categoria">Cloud</span>
               <h2 class="card-title">Fundamentos de AWS</h2>
-              <p class="card-text flex-grow-1">Serviços essenciais da Amazon Web Services e preparação para a certificação Cloud Practitioner.</p>
+              <p class="card-text flex-grow-1">
+                Serviços essenciais da Amazon Web Services e preparação para a
+                certificação Cloud Practitioner.
+              </p>
               <p class="card-text mb-2">
-                <i class="bi bi-calendar-event me-2" aria-hidden="true"></i>Início: 26 de Janeiro de 2027
+                <i class="bi bi-calendar-event me-2" aria-hidden="true"></i
+                >Início: 26 de Janeiro de 2027
               </p>
               <p class="card-text mb-3">
                 <i class="bi bi-clock me-2" aria-hidden="true"></i>80 horas
@@ -350,15 +431,20 @@
                 src="../images/cursos/devops-docker-kubernetes.jpg"
                 alt="DevOps e Automação com Docker e Kubernetes"
                 loading="lazy"
-                onerror="this.remove()"
               />
             </div>
             <div class="card-body">
               <span class="curso-categoria">Cloud</span>
-              <h2 class="card-title">DevOps e Automação com Docker e Kubernetes</h2>
-              <p class="card-text flex-grow-1">Contentores, pipelines CI/CD e orquestração para automatizar a entrega de software.</p>
+              <h2 class="card-title">
+                DevOps e Automação com Docker e Kubernetes
+              </h2>
+              <p class="card-text flex-grow-1">
+                Contentores, pipelines CI/CD e orquestração para automatizar a
+                entrega de software.
+              </p>
               <p class="card-text mb-2">
-                <i class="bi bi-calendar-event me-2" aria-hidden="true"></i>Início: 01 de Março de 2027
+                <i class="bi bi-calendar-event me-2" aria-hidden="true"></i
+                >Início: 01 de Março de 2027
               </p>
               <p class="card-text mb-3">
                 <i class="bi bi-clock me-2" aria-hidden="true"></i>160 horas
@@ -376,15 +462,20 @@
                 src="../images/cards/card1.jpg"
                 alt="Gestão de Redes e Sistemas Computacionais"
                 loading="lazy"
-                onerror="this.remove()"
               />
             </div>
             <div class="card-body">
               <span class="curso-categoria">Redes</span>
-              <h2 class="card-title">Gestão de Redes e Sistemas Computacionais</h2>
-              <p class="card-text flex-grow-1">Instalação, configuração e administração de redes e sistemas em ambiente empresarial.</p>
+              <h2 class="card-title">
+                Gestão de Redes e Sistemas Computacionais
+              </h2>
+              <p class="card-text flex-grow-1">
+                Instalação, configuração e administração de redes e sistemas em
+                ambiente empresarial.
+              </p>
               <p class="card-text mb-2">
-                <i class="bi bi-calendar-event me-2" aria-hidden="true"></i>Início: 21 de Novembro de 2026
+                <i class="bi bi-calendar-event me-2" aria-hidden="true"></i
+                >Início: 21 de Novembro de 2026
               </p>
               <p class="card-text mb-3">
                 <i class="bi bi-clock me-2" aria-hidden="true"></i>1020 horas
@@ -402,15 +493,18 @@
                 src="../images/cursos/redes-cisco-ccna.jpg"
                 alt="Redes Cisco CCNA"
                 loading="lazy"
-                onerror="this.remove()"
               />
             </div>
             <div class="card-body">
               <span class="curso-categoria">Redes</span>
               <h2 class="card-title">Redes Cisco CCNA</h2>
-              <p class="card-text flex-grow-1">Switching, routing e endereçamento IP, com preparação para a certificação CCNA.</p>
+              <p class="card-text flex-grow-1">
+                Switching, routing e endereçamento IP, com preparação para a
+                certificação CCNA.
+              </p>
               <p class="card-text mb-2">
-                <i class="bi bi-calendar-event me-2" aria-hidden="true"></i>Início: 18 de Janeiro de 2027
+                <i class="bi bi-calendar-event me-2" aria-hidden="true"></i
+                >Início: 18 de Janeiro de 2027
               </p>
               <p class="card-text mb-3">
                 <i class="bi bi-clock me-2" aria-hidden="true"></i>180 horas
@@ -428,15 +522,18 @@
                 src="../images/cursos/servidores-linux.jpg"
                 alt="Administração de Servidores Linux"
                 loading="lazy"
-                onerror="this.remove()"
               />
             </div>
             <div class="card-body">
               <span class="curso-categoria">Servidores</span>
               <h2 class="card-title">Administração de Servidores Linux</h2>
-              <p class="card-text flex-grow-1">Instalação, gestão de utilizadores, serviços e segurança em servidores Linux.</p>
+              <p class="card-text flex-grow-1">
+                Instalação, gestão de utilizadores, serviços e segurança em
+                servidores Linux.
+              </p>
               <p class="card-text mb-2">
-                <i class="bi bi-calendar-event me-2" aria-hidden="true"></i>Início: 10 de Fevereiro de 2027
+                <i class="bi bi-calendar-event me-2" aria-hidden="true"></i
+                >Início: 10 de Fevereiro de 2027
               </p>
               <p class="card-text mb-3">
                 <i class="bi bi-clock me-2" aria-hidden="true"></i>140 horas
@@ -454,15 +551,18 @@
                 src="../images/cursos/windows-server-active-directory.jpg"
                 alt="Windows Server e Active Directory"
                 loading="lazy"
-                onerror="this.remove()"
               />
             </div>
             <div class="card-body">
               <span class="curso-categoria">Servidores</span>
               <h2 class="card-title">Windows Server e Active Directory</h2>
-              <p class="card-text flex-grow-1">Gestão de domínios, políticas de grupo e serviços de infraestrutura em Windows Server.</p>
+              <p class="card-text flex-grow-1">
+                Gestão de domínios, políticas de grupo e serviços de
+                infraestrutura em Windows Server.
+              </p>
               <p class="card-text mb-2">
-                <i class="bi bi-calendar-event me-2" aria-hidden="true"></i>Início: 05 de Abril de 2027
+                <i class="bi bi-calendar-event me-2" aria-hidden="true"></i
+                >Início: 05 de Abril de 2027
               </p>
               <p class="card-text mb-3">
                 <i class="bi bi-clock me-2" aria-hidden="true"></i>140 horas
@@ -480,15 +580,20 @@
                 src="../images/cursos/inteligencia-artificial-machine-learning.jpg"
                 alt="Inteligência Artificial e Machine Learning"
                 loading="lazy"
-                onerror="this.remove()"
               />
             </div>
             <div class="card-body">
               <span class="curso-categoria">Inteligência Artificial</span>
-              <h2 class="card-title">Inteligência Artificial e Machine Learning</h2>
-              <p class="card-text flex-grow-1">Fundamentos de IA, modelos de machine learning e aplicações práticas em Python.</p>
+              <h2 class="card-title">
+                Inteligência Artificial e Machine Learning
+              </h2>
+              <p class="card-text flex-grow-1">
+                Fundamentos de IA, modelos de machine learning e aplicações
+                práticas em Python.
+              </p>
               <p class="card-text mb-2">
-                <i class="bi bi-calendar-event me-2" aria-hidden="true"></i>Início: 15 de Março de 2027
+                <i class="bi bi-calendar-event me-2" aria-hidden="true"></i
+                >Início: 15 de Março de 2027
               </p>
               <p class="card-text mb-3">
                 <i class="bi bi-clock me-2" aria-hidden="true"></i>120 horas
@@ -602,24 +707,5 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <script>
-      // Filtro por área: mostra/esconde os cursos consoante o botão escolhido
-      const botoes = document.querySelectorAll("[data-filtro]");
-      const cursos = document.querySelectorAll("[data-categoria]");
-
-      botoes.forEach((botao) => {
-        botao.addEventListener("click", () => {
-          const filtro = botao.dataset.filtro;
-          botoes.forEach((b) => {
-            b.classList.toggle("active", b === botao);
-            b.setAttribute("aria-pressed", b === botao);
-          });
-          cursos.forEach((curso) => {
-            const visivel = filtro === "todos" || curso.dataset.categoria === filtro;
-            curso.classList.toggle("d-none", !visivel);
-          });
-        });
-      });
-    </script>
   </body>
 </html>

@@ -17,17 +17,26 @@
 }
 
 .btn-filtro:hover,
-.btn-filtro:focus-visible {
+.btn-check:focus-visible + .btn-filtro {
   color: var(--blue);
   border-color: var(--blue);
   opacity: 1;
 }
 
-.btn-filtro.active {
+.btn-check:checked + .btn-filtro {
   color: var(--text);
   background: var(--purple);
   border-color: var(--purple);
   opacity: 1;
+}
+
+body:has(#f-ciberseguranca:checked) .cursos-grid > :not([data-categoria="ciberseguranca"]),
+body:has(#f-programacao:checked) .cursos-grid > :not([data-categoria="programacao"]),
+body:has(#f-cloud:checked) .cursos-grid > :not([data-categoria="cloud"]),
+body:has(#f-redes:checked) .cursos-grid > :not([data-categoria="redes"]),
+body:has(#f-servidores:checked) .cursos-grid > :not([data-categoria="servidores"]),
+body:has(#f-ia:checked) .cursos-grid > :not([data-categoria="ia"]) {
+  display: none;
 }
 
 /*cartões dos cursos*/
