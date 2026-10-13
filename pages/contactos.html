@@ -24,7 +24,49 @@
     />
   </head>
   <body>
+       <!--***************************Barra de navegação***************************-->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
     
+          <a class="navbar-brand navbar-logo me-lg-5" href="/index.html">
+            <img src="/images/logo/logo_letras_brancas.svg" alt="CESAE Digital" />
+          </a>
+          <!-- Botao que aparece quando estamos em vista de telemovel -->
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- FIM - Botao que aparece quando estamos em vista de telemovel -->
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav align-items-lg-center gap-2 gap-lg-3">
+    
+              <!-- DELETED: the whole <li> that held the logo (6 lines) -->
+    
+              <li class="nav-item">
+                <a class="nav-link nav-cursos" href="/pages/cursos.html">Cursos</a>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/parceiros.html">Parceiros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/contactos.html">Contactos</a>
+              </li>
+            </ul>
+    
+            <!-- Formulário - nav -->
+            <form class="d-flex ms-lg-auto mt-3 mt-lg-0 navbar-search" role="search" action="/pages/cursos.html"
+              method="get">
+              <input class="form-control" type="search" name="q" placeholder="Pesquisar cursos"
+                aria-label="Pesquisar cursos" />
+              <button class="btn btn-pesquisar ms-2" type="submit" aria-label="Pesquisar">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+    
+          </div>
+        </div>
+      </nav>
+      <!--***************************Fim da barra de navegação***************************-->
     <!-- secção principal -->
     <section class="top">
       <div class="container">
