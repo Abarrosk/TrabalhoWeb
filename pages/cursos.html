@@ -26,63 +26,67 @@
 
   <body class="d-flex flex-column min-vh-100">
     <!--***************************Barra de navegação***************************-->
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-    
-          <a class="navbar-brand navbar-logo me-lg-5" href="/index.html">
-            <img src="/images/logo/logo_letras_brancas.svg" alt="CESAE Digital" />
-          </a>
-          <!-- Botao que aparece quando estamos em vista de telemovel -->
-          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- FIM - Botao que aparece quando estamos em vista de telemovel -->
-          <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav align-items-lg-center gap-2 gap-lg-3">
-    
-              <!-- DELETED: the whole <li> that held the logo (6 lines) -->
-    
-              <li class="nav-item">
-                <a class="nav-link nav-cursos" href="/pages/cursos.html">Cursos</a>
-              </li>
-    
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/parceiros.html">Parceiros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/contactos.html">Contactos</a>
-              </li>
-            </ul>
-    
-            <!-- Formulário - nav -->
-            <form class="d-flex ms-lg-auto mt-3 mt-lg-0 navbar-search" role="search" action="/pages/cursos.html"
-              method="get">
-              <input class="form-control" type="search" name="q" placeholder="Pesquisar cursos"
-                aria-label="Pesquisar cursos" />
-              <button class="btn btn-pesquisar ms-2" type="submit" aria-label="Pesquisar">
-                <i class="bi bi-search"></i>
-              </button>
-            </form>
-    
-          </div>
-        </div>
-      </nav>
-      <!--***************************Fim da barra de navegação***************************-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand navbar-logo me-lg-5" href="/index.html">
+          <img src="/images/logo/logo_letras_brancas.svg" alt="CESAE Digital" />
+        </a>
+        <!-- Botao que aparece quando estamos em vista de telemovel -->
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- FIM - Botao que aparece quando estamos em vista de telemovel -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav align-items-lg-center gap-2 gap-lg-3">
+            <!-- DELETED: the whole <li> that held the logo (6 lines) -->
 
+            <li class="nav-item">
+              <a class="nav-link nav-cursos" href="/pages/cursos.html"
+                >Cursos</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/parceiros.html">Parceiros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/contactos.html">Contactos</a>
+            </li>
+          </ul>
+
+          <!-- Formulário - nav -->
+          <form
+            class="d-flex ms-lg-auto mt-3 mt-lg-0 navbar-search"
+            role="search"
+            action="/pages/cursos.html"
+            method="get"
+          >
+            <input
+              class="form-control"
+              type="search"
+              name="q"
+              placeholder="Pesquisar cursos"
+              aria-label="Pesquisar cursos"
+            />
+            <button
+              class="btn btn-pesquisar ms-2"
+              type="submit"
+              aria-label="Pesquisar"
+            >
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--***************************Fim da barra de navegação***************************-->
 
     <!--***************************Cursos***************************-->
-    <!--
-
-         images/cursos/desenvolvimento-web-full-stack.jpg
-         images/cursos/programacao-python.jpg
-         images/cursos/fundamentos-aws.jpg
-         images/cursos/devops-docker-kubernetes.jpg
-         images/cursos/redes-cisco-ccna.jpg
-         images/cursos/servidores-linux.jpg
-         images/cursos/windows-server-active-directory.jpg
-         images/cursos/inteligencia-artificial-machine-learning.jpg
-      (Os 5 primeiros cursos do index já usam as fotos de /images/cards/.)
-    -->
     <section class="container py-5">
       <h1 class="h2 mb-2">Cursos</h1>
       <p class="cursos-intro mb-4">
@@ -709,44 +713,5 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <script>
-      // Filtro por área + pesquisa (?q=...) vinda da barra de navegação
-      const botoes = document.querySelectorAll("[data-filtro]");
-      const cursos = document.querySelectorAll("[data-categoria]");
-      let filtroAtual = "todos";
-      let termo = "";
-
-      // Remove maiúsculas e acentos, para "ciberseguranca" encontrar "Cibersegurança"
-      const normalizar = (texto) =>
-        texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
-
-      function aplicarFiltros() {
-        cursos.forEach((curso) => {
-          const naCategoria = filtroAtual === "todos" || curso.dataset.categoria === filtroAtual;
-          const noTexto = normalizar(
-            curso.querySelector(".card-title").textContent +
-              " " +
-              curso.querySelector(".curso-categoria").textContent +
-              " " +
-              curso.querySelector(".card-text").textContent
-          ).includes(termo);
-          curso.classList.toggle("d-none", !(naCategoria && noTexto));
-        });
-      }
-
-      botoes.forEach((botao) => {
-        botao.addEventListener("click", () => {
-          filtroAtual = botao.dataset.filtro;
-          botoes.forEach((b) => {
-            b.classList.toggle("active", b === botao);
-            b.setAttribute("aria-pressed", b === botao);
-          });
-          aplicarFiltros();
-        });
-      });
-
-      termo = normalizar((new URLSearchParams(location.search).get("q") || "").trim());
-      aplicarFiltros();
-    </script>
   </body>
 </html>
