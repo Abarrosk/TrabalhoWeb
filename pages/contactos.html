@@ -1,4 +1,276 @@
-s            </div>
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pagina Web - Contactos</title>
+    <meta
+      name="description"
+      content="Entre em contacto com o CESAE Digital através do formulário ou consulte a morada, o telefone e o email de cada polo: Porto, São João da Madeira, Leça da Palmeira, Marco de Canaveses, Vila do Conde e Viseu."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_PT" />
+    <meta property="og:site_name" content="CESAE Digital" />
+    <meta property="og:title" content="Pagina Web - Contactos" />
+    <meta
+      property="og:description"
+      content="Entre em contacto com o CESAE Digital através do formulário ou consulte a morada, o telefone e o email de cada polo: Porto, São João da Madeira, Leça da Palmeira, Marco de Canaveses, Vila do Conde e Viseu."
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../images/logo/favicon-cesae.svg"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand navbar-logo me-lg-5" href="../index.html">
+          <img
+            src="../images/logo/logo_letras_brancas.svg"
+            alt="CESAE Digital"
+          />
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav align-items-lg-center gap-2 gap-lg-3">
+            <li class="nav-item">
+              <a class="nav-link nav-cursos" href="../pages/cursos.html"
+                >Cursos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/parceiros.html">Parceiros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/contactos.html">Contactos</a>
+            </li>
+          </ul>
+          <div
+            class="d-flex ms-lg-auto mt-3 mt-lg-0 navbar-search"
+            role="search"
+          >
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Pesquisar cursos"
+              aria-label="Pesquisar cursos"
+            />
+            <button
+              class="btn btn-pesquisar ms-2"
+              type="button"
+              aria-label="Pesquisar"
+            >
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="container py-5">
+      <h1 class="h2 mb-2">Contactos</h1>
+      <p class="contactos-intro mb-0">
+        Estamos disponíveis para esclarecer as suas questões e ajudá-lo a
+        encontrar a formação mais adequada aos seus objetivos profissionais.
+      </p>
+    </section>
+    <section class="container pb-5">
+      <div class="row g-4 align-items-start">
+        <div class="col-12 col-lg-6">
+          <img
+            class="contacto-img"
+            src="../images/contactos/office.jpg"
+            alt="escritório"
+          />
+          <p class="mt-4 mb-0">
+            Se tiver alguma questão sobre os nossos cursos, pretender conhecer
+            melhor as nossas parcerias ou obter mais informações sobre os nossos
+            serviços e projetos, estamos aqui para ajudar.<br />
+            Entre em contacto connosco através dos dados disponibilizados em
+            baixo ou preenchendo o formulário. Teremos todo o gosto em
+            esclarecer as suas dúvidas e responder às suas questões.
+          </p>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="card border-0 form-card">
+            <div class="card-body">
+              <form>
+                <div class="mb-3">
+                  <label for="primeiroNome" class="form-label">
+                    Primeiro nome
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="primeiroNome"
+                    name="primeiroNome"
+                    placeholder="Introduz o seu primeiro nome"
+                    autocomplete="given-name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="ultimoNome" class="form-label">
+                    Último nome
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="ultimoNome"
+                    name="ultimoNome"
+                    placeholder="Introduz o seu último nome"
+                    autocomplete="family-name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label"> Email </label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="exemplo@email.com"
+                    autocomplete="email"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="telefone" class="form-label"> Telefone </label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="telefone"
+                    name="telefone"
+                    placeholder="+351 912 345 678"
+                    autocomplete="tel"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="dataContacto" class="form-label">
+                    Melhor altura para contactar
+                  </label>
+                  <input
+                    type="datetime-local"
+                    class="form-control"
+                    id="dataContacto"
+                    name="dataContacto"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="metodoContacto" class="form-label">
+                    O melhor método de contacto
+                  </label>
+                  <select
+                    class="form-select"
+                    id="metodoContacto"
+                    name="metodoContacto"
+                  >
+                    <option value="" selected disabled>
+                      Selecione uma opção
+                    </option>
+                    <option value="email">Email</option>
+                    <option value="telefone">Telefone</option>
+                  </select>
+                </div>
+                <div class="mb-4">
+                  <label for="informacaoAdicional" class="form-label">
+                    Tem alguma informação adicional?
+                  </label>
+                  <textarea
+                    class="form-control"
+                    id="informacaoAdicional"
+                    name="informacaoAdicional"
+                    rows="5"
+                    required
+                    placeholder="Escreva aqui a tua mensagem..."
+                  ></textarea>
+                </div>
+                <div class="d-flex flex-wrap gap-2">
+                  <button type="button" class="btn btn-enviar">Enviar</button>
+                  <button type="reset" class="btn btn-reset">Reset</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container pb-5">
+      <h2 class="h3 mb-2">Os nossos Polos</h2>
+      <p class="contactos-intro mb-4">
+        Descubra onde estamos e saiba como entrar em contacto com qualquer um
+        dos nossos Polos.
+      </p>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 polos-grid">
+        <div class="col">
+          <div class="card border-0 h-100">
+            <img
+              src="../images/contactos/Porto.png"
+              class="card-img-top polo-img"
+              alt="Porto"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Porto</h5>
+              <p class="card-text flex-grow-1">
+                <i class="bi bi-pin-map me-2"></i
+                ><span>Rua Ciríaco Cardoso, 186 4150-212 Porto</span>
+              </p>
+              <div class="card-contacts">
+                <a href="#" class="contact-link"
+                  ><i class="bi bi-telephone"></i><span>226 195 200</span></a
+                >
+                <a href="#" class="contact-link"
+                  ><i class="bi bi-envelope"></i><span>porto@cesae.pt</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0 h-100">
+            <img
+              src="../images/contactos/SãoJoãoDaMadeira.png"
+              class="card-img-top polo-img"
+              alt="São João da Madeira"
+            />
+            <div class="card-body">
+              <h5 class="card-title">São João da Madeira</h5>
+              <p class="card-text flex-grow-1">
+                <i class="bi bi-pin-map me-2"></i
+                ><span
+                  >SANJOTEC - R. de Fundões 151, 3700-121 São João da
+                  Madeira</span
+                >
+              </p>
+              <div class="card-contacts">
+                <a href="#" class="contact-link"
+                  ><i class="bi bi-telephone"></i><span>256 001 923</span></a
+                >
+                <a href="#" class="contact-link"
+                  ><i class="bi bi-envelope"></i
+                  ><span>sjmadeira@cesae.pt</span></a
+                >
+              </div>
+            </div>
           </div>
         </div>
         <div class="col">
@@ -107,9 +379,11 @@ s            </div>
         </div>
       </div>
     </section>
+    <!--***************************Footer***************************-->
     <footer class="footer-cesae pt-5 pb-3">
       <div class="container">
         <div class="row g-4">
+          <!-- Logo + descrição -->
           <div class="col-12 col-md-6 col-lg-3">
             <a href="../index.html" class="footer-logo">
               <img
@@ -118,33 +392,40 @@ s            </div>
                 height="44"
               />
             </a>
-            <p class="texto-suave mt-3">
+            <p class="texto-suave small mt-3">
               Somos, há 40 anos, o parceiro das empresas para a formação e
               qualificação.
             </p>
           </div>
-          <div class="col-6 col-md-3 ps-lg-5">
+
+          <!-- Links: col 1 -->
+          <div class="col-6 col-md-3 col-lg-3 ps-lg-5">
             <h5>Formação</h5>
             <ul class="list-unstyled">
-              <li><a href="../pages/cursos.html">Cursos</a></li>
-              <li><a href="../pages/maintenance.html">Projetos</a></li>
-              <li><a href="../pages/maintenance.html">Serviços</a></li>
+              <li><a href="/pages/cursos.html">Cursos</a></li>
+              <li><a href="/pages/maintenance.html">Projetos</a></li>
+              <li><a href="/pages/maintenance.html">Serviços</a></li>
             </ul>
           </div>
-          <div class="col-6 col-md-3">
+
+          <!-- Links: col 2 -->
+          <div class="col-6 col-md-3 col-lg-3">
             <h5>Institucional</h5>
             <ul class="list-unstyled">
-              <li><a href="../index.html">Cesae digital</a></li>
-              <li><a href="../pages/parceiros.html">Parceiros</a></li>
-              <li><a href="../pages/contactos.html">Contactos</a></li>
+              <li><a href="/index.html">Cesae digital</a></li>
+              <li><a href="/pages/parceiros.html">Parceiros</a></li>
+              <li><a href="/pages/contactos.html">Contactos</a></li>
             </ul>
           </div>
+
+          <!-- Contactos -->
           <div class="col-12 col-md-6 col-lg-3">
             <h5>Contactos</h5>
             <ul class="list-unstyled texto-suave">
               <li>Telefone 226 195 200</li>
               <li>Email geral@cesae.pt</li>
             </ul>
+            <!-- Redes sociais -->
             <div class="d-flex gap-3 fs-4">
               <a
                 href="https://pt.linkedin.com/school/cesae-digital/"
@@ -177,14 +458,17 @@ s            </div>
             </div>
           </div>
         </div>
+
         <hr class="footer-linha my-4" />
+
+        <!-- Linha final -->
         <div
           class="d-flex flex-column flex-md-row justify-content-between gap-2 small"
         >
           <span class="texto-suave">© 2026 CESAE Digital.</span>
           <div class="d-flex gap-3">
-            <a href="../pages/maintenance.html">Política de privacidade</a>
-            <a href="../pages/maintenance.html">Termos e condições</a>
+            <a href="/pages/maintenance.html">Política de privacidade</a>
+            <a href="/pages/maintenance.html">Termos e condições</a>
           </div>
         </div>
       </div>
