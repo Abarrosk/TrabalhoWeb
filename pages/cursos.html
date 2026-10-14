@@ -1,37 +1,39 @@
 <!doctype html>
-<html lang="pt">
+<html lang="pt-PT">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cursos | Cesae</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pagina Web - Cursos</title>
+    <meta name="description" content="Consulte a oferta formativa do CESAE Digital em cibersegurança, programação, cloud, redes, servidores e inteligência artificial, e filtre os cursos pela área que mais lhe interessa." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_PT" />
+    <meta property="og:site_name" content="CESAE Digital" />
+    <meta property="og:title" content="Pagina Web - Cursos" />
+    <meta property="og:description" content="Consulte a oferta formativa do CESAE Digital em cibersegurança, programação, cloud, redes, servidores e inteligência artificial, e filtre os cursos pela área que mais lhe interessa." />
     <link
-      rel="shortcut icon"
+      rel="icon"
+      type="image/svg+xml"
       href="../images/logo/favicon-cesae.svg"
-      type="image/x-icon"
     />
-
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/cursos.css" />
   </head>
 
   <body class="d-flex flex-column min-vh-100">
-    <!--***************************Barra de navegação***************************-->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand navbar-logo me-lg-5" href="/index.html">
-          <img src="/images/logo/logo_letras_brancas.svg" alt="CESAE Digital" />
+        <a class="navbar-brand navbar-logo me-lg-5" href="../index.html">
+          <img src="../images/logo/logo_letras_brancas.svg" alt="CESAE Digital" />
         </a>
-        <!-- Botao que aparece quando estamos em vista de telemovel -->
         <button
           type="button"
           class="navbar-toggler"
@@ -40,53 +42,40 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- FIM - Botao que aparece quando estamos em vista de telemovel -->
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav align-items-lg-center gap-2 gap-lg-3">
-            <!-- DELETED: the whole <li> that held the logo (6 lines) -->
-
             <li class="nav-item">
-              <a class="nav-link nav-cursos" href="/pages/cursos.html"
-                >Cursos</a
-              >
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="/pages/parceiros.html">Parceiros</a>
+              <a class="nav-link nav-cursos" href="../pages/cursos.html">Cursos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/pages/contactos.html">Contactos</a>
+              <a class="nav-link" href="../pages/parceiros.html">Parceiros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/contactos.html">Contactos</a>
             </li>
           </ul>
-
-          <!-- Formulário - nav -->
-          <form
+          <div
             class="d-flex ms-lg-auto mt-3 mt-lg-0 navbar-search"
             role="search"
-            action="/pages/cursos.html"
-            method="get"
           >
             <input
               class="form-control"
               type="search"
-              name="q"
               placeholder="Pesquisar cursos"
               aria-label="Pesquisar cursos"
             />
             <button
               class="btn btn-pesquisar ms-2"
-              type="submit"
+              type="button"
               aria-label="Pesquisar"
             >
               <i class="bi bi-search"></i>
             </button>
-          </form>
+          </div>
         </div>
       </div>
     </nav>
-    <!--***************************Fim da barra de navegação***************************-->
 
-    <!--***************************Cursos***************************-->
     <section class="container py-5">
       <h1 class="h2 mb-2">Cursos</h1>
       <p class="cursos-intro mb-4">
@@ -95,7 +84,6 @@
         Escolhe a área que mais te interessa.
       </p>
 
-      <!-- Filtros por área -->
       <div
         class="d-flex flex-wrap gap-2 mb-5"
         role="group"
@@ -163,7 +151,6 @@
       </div>
 
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 cursos-grid">
-        <!--------------------1º curso------------------------>
         <div class="col" data-categoria="ciberseguranca">
           <article class="card border-0 h-100">
             <div class="curso-img">
@@ -188,11 +175,10 @@
               <p class="card-text mb-3">
                 <i class="bi bi-clock me-2" aria-hidden="true"></i>500 horas
               </p>
-              <a href="/pages/maintenance.html">Ver detalhes do curso</a>
+              <a href="../pages/maintenance.html">Ver detalhes do curso</a>
             </div>
           </article>
         </div>
-        <!--------------------2º curso------------------------>
         <div class="col" data-categoria="ciberseguranca">
           <article class="card border-0 h-100">
             <div class="curso-img">
@@ -217,11 +203,10 @@
               <p class="card-text mb-3">
                 <i class="bi bi-clock me-2" aria-hidden="true"></i>60 horas
               </p>
-              <a href="/pages/maintenance.html">Ver detalhes do curso</a>
+              <a href="../pages/maintenance.html">Ver detalhes do curso</a>
             </div>
           </article>
         </div>
-        <!--------------------3º curso------------------------>
         <div class="col" data-categoria="ciberseguranca">
           <article class="card border-0 h-100">
             <div class="curso-img">
@@ -246,11 +231,10 @@
               <p class="card-text mb-3">
                 <i class="bi bi-clock me-2" aria-hidden="true"></i>150 horas
               </p>
-              <a href="/pages/maintenance.html">Ver detalhes do curso</a>
+              <a href="../pages/maintenance.html">Ver detalhes do curso</a>
             </div>
           </article>
         </div>
-        <!--------------------4º curso------------------------>
         <div class="col" data-categoria="programacao">
           <article class="card border-0 h-100">
             <div class="curso-img">
@@ -277,11 +261,10 @@
               <p class="card-text mb-3">
                 <i class="bi bi-clock me-2" aria-hidden="true"></i>100 horas
               </p>
-              <a href="/pages/maintenance.html">Ver detalhes do curso</a>
+              <a href="../pages/maintenance.html">Ver detalhes do curso</a>
             </div>
           </article>
         </div>
-        <!--------------------5º curso------------------------>
         <div class="col" data-categoria="programacao">
           <article class="card border-0 h-100">
             <div class="curso-img">
@@ -308,11 +291,10 @@
               <p class="card-text mb-3">
                 <i class="bi bi-clock me-2" aria-hidden="true"></i>900 horas
               </p>
-              <a href="/pages/maintenance.html">Ver detalhes do curso</a>
+              <a href="../pages/maintenance.html">Ver detalhes do curso</a>
             </div>
           </article>
         </div>
-        <!--------------------6º curso------------------------>
         <div class="col" data-categoria="programacao">
           <article class="card border-0 h-100">
             <div class="curso-img">
@@ -337,11 +319,10 @@
               <p class="card-text mb-3">
                 <i class="bi bi-clock me-2" aria-hidden="true"></i>600 horas
               </p>
-              <a href="/pages/maintenance.html">Ver detalhes do curso</a>
+              <a href="../pages/maintenance.html">Ver detalhes do curso</a>
             </div>
           </article>
         </div>
-        <!--------------------7º curso------------------------>
         <div class="col" data-categoria="programacao">
           <article class="card border-0 h-100">
             <div class="curso-img">
@@ -366,11 +347,10 @@
               <p class="card-text mb-3">
                 <i class="bi bi-clock me-2" aria-hidden="true"></i>120 horas
               </p>
-              <a href="/pages/maintenance.html">Ver detalhes do curso</a>
+              <a href="../pages/maintenance.html">Ver detalhes do curso</a>
             </div>
           </article>
         </div>
-        <!--------------------8º curso------------------------>
         <div class="col" data-categoria="cloud">
           <article class="card border-0 h-100">
             <div class="curso-img">
@@ -395,11 +375,10 @@
               <p class="card-text mb-3">
                 <i class="bi bi-clock me-2" aria-hidden="true"></i>400 horas
               </p>
-              <a href="/pages/maintenance.html">Ver detalhes do curso</a>
+              <a href="../pages/maintenance.html">Ver detalhes do curso</a>
             </div>
           </article>
         </div>
-        <!--------------------9º curso------------------------>
         <div class="col" data-categoria="cloud">
           <article class="card border-0 h-100">
             <div class="curso-img">
@@ -424,11 +403,10 @@
               <p class="card-text mb-3">
                 <i class="bi bi-clock me-2" aria-hidden="true"></i>80 horas
               </p>
-              <a href="/pages/maintenance.html">Ver detalhes do curso</a>
+              <a href="../pages/maintenance.html">Ver detalhes do curso</a>
             </div>
           </article>
         </div>
-        <!--------------------10º curso------------------------>
         <div class="col" data-categoria="cloud">
           <article class="card border-0 h-100">
             <div class="curso-img">
@@ -455,11 +433,10 @@
               <p class="card-text mb-3">
                 <i class="bi bi-clock me-2" aria-hidden="true"></i>160 horas
               </p>
-              <a href="/pages/maintenance.html">Ver detalhes do curso</a>
+              <a href="../pages/maintenance.html">Ver detalhes do curso</a>
             </div>
           </article>
         </div>
-        <!--------------------11º curso------------------------>
         <div class="col" data-categoria="redes">
           <article class="card border-0 h-100">
             <div class="curso-img">
@@ -486,11 +463,10 @@
               <p class="card-text mb-3">
                 <i class="bi bi-clock me-2" aria-hidden="true"></i>1020 horas
               </p>
-              <a href="/pages/maintenance.html">Ver detalhes do curso</a>
+              <a href="../pages/maintenance.html">Ver detalhes do curso</a>
             </div>
           </article>
         </div>
-        <!--------------------12º curso------------------------>
         <div class="col" data-categoria="redes">
           <article class="card border-0 h-100">
             <div class="curso-img">
@@ -515,11 +491,10 @@
               <p class="card-text mb-3">
                 <i class="bi bi-clock me-2" aria-hidden="true"></i>180 horas
               </p>
-              <a href="/pages/maintenance.html">Ver detalhes do curso</a>
+              <a href="../pages/maintenance.html">Ver detalhes do curso</a>
             </div>
           </article>
         </div>
-        <!--------------------13º curso------------------------>
         <div class="col" data-categoria="servidores">
           <article class="card border-0 h-100">
             <div class="curso-img">
@@ -544,11 +519,10 @@
               <p class="card-text mb-3">
                 <i class="bi bi-clock me-2" aria-hidden="true"></i>140 horas
               </p>
-              <a href="/pages/maintenance.html">Ver detalhes do curso</a>
+              <a href="../pages/maintenance.html">Ver detalhes do curso</a>
             </div>
           </article>
         </div>
-        <!--------------------14º curso------------------------>
         <div class="col" data-categoria="servidores">
           <article class="card border-0 h-100">
             <div class="curso-img">
@@ -573,11 +547,10 @@
               <p class="card-text mb-3">
                 <i class="bi bi-clock me-2" aria-hidden="true"></i>140 horas
               </p>
-              <a href="/pages/maintenance.html">Ver detalhes do curso</a>
+              <a href="../pages/maintenance.html">Ver detalhes do curso</a>
             </div>
           </article>
         </div>
-        <!--------------------15º curso------------------------>
         <div class="col" data-categoria="ia">
           <article class="card border-0 h-100">
             <div class="curso-img">
@@ -604,19 +577,16 @@
               <p class="card-text mb-3">
                 <i class="bi bi-clock me-2" aria-hidden="true"></i>120 horas
               </p>
-              <a href="/pages/maintenance.html">Ver detalhes do curso</a>
+              <a href="../pages/maintenance.html">Ver detalhes do curso</a>
             </div>
           </article>
         </div>
       </div>
     </section>
-    <!--***************************Fim dos Cursos***************************-->
 
-    <!--***************************Footer***************************-->
     <footer class="footer-cesae pt-5 pb-3 mt-auto">
       <div class="container">
         <div class="row g-4">
-          <!-- Logo + descrição -->
           <div class="col-12 col-md-6 col-lg-3">
             <a href="../index.html" class="footer-logo">
               <img
@@ -625,90 +595,71 @@
                 height="44"
               />
             </a>
-            <p class="texto-suave small mt-3">
+            <p class="texto-suave mt-3">
               Somos, há 40 anos, o parceiro das empresas para a formação e
               qualificação.
             </p>
           </div>
-
-          <!-- Links: col 1 -->
-          <div class="col-6 col-md-3 col-lg-3 ps-lg-5">
+          <div class="col-6 col-md-3 ps-lg-5">
             <h5>Formação</h5>
             <ul class="list-unstyled">
-              <li><a href="/pages/cursos.html">Cursos</a></li>
-              <li><a href="/pages/maintenance.html">Projetos</a></li>
-              <li><a href="/pages/maintenance.html">Serviços</a></li>
+              <li><a href="../pages/cursos.html">Cursos</a></li>
+              <li><a href="../pages/maintenance.html">Projetos</a></li>
+              <li><a href="../pages/maintenance.html">Serviços</a></li>
             </ul>
           </div>
-
-          <!-- Links: col 2 -->
-          <div class="col-6 col-md-3 col-lg-3">
+          <div class="col-6 col-md-3">
             <h5>Institucional</h5>
             <ul class="list-unstyled">
-              <li><a href="/index.html">Cesae digital</a></li>
-              <li><a href="/pages/parceiros.html">Parceiros</a></li>
-              <li><a href="/pages/contactos.html">Contactos</a></li>
+              <li><a href="../index.html">Cesae digital</a></li>
+              <li><a href="../pages/parceiros.html">Parceiros</a></li>
+              <li><a href="../pages/contactos.html">Contactos</a></li>
             </ul>
           </div>
-
-          <!-- Contactos -->
           <div class="col-12 col-md-6 col-lg-3">
             <h5>Contactos</h5>
             <ul class="list-unstyled texto-suave">
               <li>Telefone 226 195 200</li>
               <li>Email geral@cesae.pt</li>
             </ul>
-            <!-- Redes sociais -->
             <div class="d-flex gap-3 fs-4">
               <a
                 href="https://pt.linkedin.com/school/cesae-digital/"
-                target="_blank"
-                rel="noopener noreferrer"
                 aria-label="LinkedIn"
                 ><i class="bi bi-linkedin"></i
               ></a>
               <a
                 href="https://www.instagram.com/cesae.digital/"
-                target="_blank"
-                rel="noopener noreferrer"
                 aria-label="Instagram"
                 ><i class="bi bi-instagram"></i
               ></a>
               <a
                 href="https://www.youtube.com/@cesaedigital"
-                target="_blank"
-                rel="noopener noreferrer"
                 aria-label="YouTube"
                 ><i class="bi bi-youtube"></i
               ></a>
               <a
                 href="https://www.facebook.com/CesaeDigital"
-                target="_blank"
-                rel="noopener noreferrer"
                 aria-label="Facebook"
                 ><i class="bi bi-facebook"></i
               ></a>
             </div>
           </div>
         </div>
-
         <hr class="footer-linha my-4" />
-
-        <!-- Linha final -->
         <div
           class="d-flex flex-column flex-md-row justify-content-between gap-2 small"
         >
           <span class="texto-suave">© 2026 CESAE Digital.</span>
           <div class="d-flex gap-3">
-            <a href="/pages/maintenance.html">Política de privacidade</a>
-            <a href="/pages/maintenance.html">Termos e condições</a>
+            <a href="../pages/maintenance.html">Política de privacidade</a>
+            <a href="../pages/maintenance.html">Termos e condições</a>
           </div>
         </div>
       </div>
     </footer>
-    <!--***************************Fim do Footer***************************-->
 
-    <script
+      <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
