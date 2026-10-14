@@ -1,469 +1,115 @@
-<!doctype html>
-<html lang="pt-pt">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contactos</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
-    <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/contactos.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!--***************************Barra de navegação***************************-->
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid">
-        <a class="navbar-brand navbar-logo me-lg-5" href="/index.html">
-          <img src="/images/logo/logo_letras_brancas.svg" alt="CESAE Digital" />
-        </a>
-        <!-- Botao que aparece quando estamos em vista de telemovel -->
-        <button
-          type="button"
-          class="navbar-toggler"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapsibleNavbar"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- FIM - Botao que aparece quando estamos em vista de telemovel -->
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav align-items-lg-center gap-2 gap-lg-3">
-            <!-- DELETED: the whole <li> that held the logo (6 lines) -->
-
-            <li class="nav-item">
-              <a class="nav-link nav-cursos" href="/pages/cursos.html"
-                >Cursos</a
-              >
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="/pages/parceiros.html">Parceiros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/pages/contactos.html">Contactos</a>
-            </li>
-          </ul>
-
-          <!-- Formulário - nav -->
-          <form
-            class="d-flex ms-lg-auto mt-3 mt-lg-0 navbar-search"
-            role="search"
-            action="/pages/cursos.html"
-            method="get"
-          >
-            <input
-              class="form-control"
-              type="search"
-              name="q"
-              placeholder="Pesquisar cursos"
-              aria-label="Pesquisar cursos"
+s            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0 h-100">
+            <img
+              src="../images/contactos/LecadaPalmeira.png"
+              class="card-img-top polo-img"
+              alt="Leça da Palmeira"
             />
-            <button
-              class="btn btn-pesquisar ms-2"
-              type="submit"
-              aria-label="Pesquisar"
-            >
-              <i class="bi bi-search"></i>
-            </button>
-          </form>
-        </div>
-      </div>
-    </nav>
-    <!--***************************Fim da barra de navegação***************************-->
-    <!-- secção principal -->
-    <section class="top">
-      <div class="container">
-        <!-- div para fazer o flexbox -->
-        <div class="row g-4">
-          <!-- div esquerda dentro da secção principal -->
-          <div class="col-md-6 left">
-            <h1 class="h2 mb-2">Contactos</h1>
-            <p>
-              Estamos disponíveis para esclarecer as suas questões e ajudá-lo a
-              encontrar a formação mais adequada aos seus objetivos
-              profissionais.
-            </p>
-          </div>
-          <!-- div direita dentro da secção principal -->
-          <div class="col-md-6"></div>
-        </div>
-      </div>
-    </section>
-    <div class="container">
-    <!-- secção do formulário -->
-    <section>
-      <!-- flexbox -->
-    <div class="container my-5">
-      <div class="form img-mobile row g-5">
-        <!-- coluna da esquerda -->
-        <div id="esq" class="container mt-5 col-12 col-md-6">
-          
-            <img class="imagem mt-2 img-fluid" src="../images/contactos/office.jpg" alt="escritório">
-         
-          <p class="mt-5 mb-3">
-            Se tiver alguma questão sobre os nossos cursos, pretender conhecer
-            melhor as nossas parcerias ou obter mais informações sobre os nossos
-            serviços e projetos, estamos aqui para ajudar.<br />
-            Entre em contacto connosco através dos dados disponibilizados em
-            baixo ou preenchendo o formulário. Teremos todo o gosto em
-            esclarecer as suas dúvidas e responder às suas questões.
-          </p>
-
-        </div>
-        <!-- coluna da direita -->
-         
-        <div class="right col-12 mb-3 col-md-6">
-          <!-- div/caixa do formulario -->
-          <div class="cor p-3">
-            <!-- Formulário -->
-            <form>
-              <!-- Primeiro nome -->
-              <div class="mb-3">
-                <label for="primeiroNome" class="form-label">
-                  Primeiro nome
-                </label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="primeiroNome"
-                  name="primeiroNome"
-                  placeholder="Introduz o seu primeiro nome"
-                  autocomplete="given-name"
-                  required
-                />
-              </div>
-
-                <!-- Último nome -->
-                <div class="mb-3">
-                  <label for="ultimoNome" class="form-label">
-                    Último nome
-                  </label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="ultimoNome"
-                    name="ultimoNome"
-                    placeholder="Introduz o seu último nome"
-                    autocomplete="family-name"
-                    required
-                  />
-                </div>
-
-                <!-- Email -->
-                <div class="mb-3">
-                  <label for="email" class="form-label"> Email </label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    name="email"
-                    placeholder="exemplo@email.com"
-                    autocomplete="email"
-                    required
-                  />
-                </div>
-
-                <!-- Telefone -->
-                <div class="mb-3">
-                  <label for="telefone" class="form-label"> Telefone </label>
-                  <input
-                    type="tel"
-                    class="form-control"
-                    id="telefone"
-                    name="telefone"
-                    placeholder="+351 912 345 678"
-                    autocomplete="tel"
-                  />
-                </div>
-
-                <!-- Melhor altura para contactar -->
-                <div class="mb-3">
-                  <label for="dataContacto" class="form-label">
-                    Melhor altura para contactar
-                  </label>
-                  <input
-                    type="datetime-local"
-                    class="form-control"
-                    id="dataContacto"
-                    name="dataContacto"
-                  />
-                </div>
-
-                <!-- Método de contacto -->
-                <div class="mb-3">
-                  <label for="metodoContacto" class="form-label">
-                    O melhor método de contacto
-                  </label>
-                  <select
-                    class="form-select"
-                    id="metodoContacto"
-                    name="metodoContacto"
-                    required
-                  >
-                    <option value="" selected disabled>
-                      Selecione uma opção
-                    </option>
-                    <option value="email">Email</option>
-                    <option value="telefone">Telefone</option>
-                  </select>
-                </div>
-
-                <!-- Informação adicional -->
-                <div class="mb-4">
-                  <label for="informacaoAdicional" class="form-label">
-                    Tem alguma informação adicional?
-                  </label>
-                  <textarea
-                    class="form-control"
-                    id="informacaoAdicional"
-                    name="informacaoAdicional"
-                    rows="10"
-                    placeholder="Escreva aqui a tua mensagem..."
-                  ></textarea>
-                </div>
-                <div class="botoes ">
-                <!-- Botão de envio -->
-                <button type="submit" class="btn btn-primary btn-sm me-4 w-25 ">
-                  Enviar
-                </button>
-                <!-- Botão de reset -->
-                <button type="reset" class="btn btn-primary btn-sm w-25">
-                  Reset
-                </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-    </section>
-<!-- secção de apresentação dos polos -->
-    <section class=" mt-5">
-        <div class="polos">
-        <h4 class="">Os nossos Polos</h4>
-        <p>
-          Descubra onde estamos e saiba como entrar em contacto com qualquer um
-          dos nossos Polos.
-        </p>
-        </div> 
-        <div class="polo-card row mt-5">
-          <div class="col-12 col-sm-4 col-lg-4 mb-5 d-flex justify-content-center">
-            <div class="card h-100">
-              <img
-                src="../images/contactos/Porto.png"
-                class="card-img-top img-fluid"
-                alt="Porto"
-              />
-              <div class="card-body text-start bg-white">
-                <div class="card-title">
-                  <h5 class="h5 fw-bold mt-1">Porto</h5>
-                </div>
-                <div class="card-address">
-                  <p class="address">
-                    <i class="bi bi-pin-map me-2"></i
-                    ><span>Rua Ciríaco Cardoso, 186 4150-212 Porto</span>
-                  </p>
-                </div>
-                <div class="card-contacts">
-                <a href="tel:+351226195200" class="contact-link contact-phone"
-                  ><i class="bi bi-telephone"></i><span>226 195 200</span></a
-                ><br />
-                <a href="mailto:porto@cesae.pt" class="contact-link contact-email"
-                  ><i class="bi bi-envelope"></i
-                  ><span>porto@cesae.pt</span></a
-                ></div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="col-12 col-sm-4 col-lg-4 mb-5 d-flex justify-content-center"
-          >
-            <div class="card h-100">
-              <img
-                src="../images/contactos/SãoJoãoDaMadeira.png"
-                class="card-img-top img-fluid"
-                alt="São João da Madeira"
-              />
-              <div class="card-body text-start bg-white">
-                <div class="card-title">
-                  <h5 class="h5 fw-bold mt-1">São João da Madeira</h5>
-                </div>
-                <div class="card-address">
-                  <p class="address">
-                    <i class="bi bi-pin-map me-2"></i
-                    ><span
-                      >SANJOTEC - R. de Fundões 151, 3700-121 São João da
-                      Madeira</span
-                    >
-                  </p>
-                </div>
-                <div class="card-contacts">
-                <a href="tel:+351256001923" class="contact-link contact-phone"
-                  ><i class="bi bi-telephone"></i><span>256 001 923</span></a
-                ><br />
-                <a href="mailto:sjmadeira@cesae.pt" class="contact-link contact-email"
-                  ><i class="bi bi-envelope"></i
-                  ><span>sjmadeira@cesae.pt</span></a
-                ></div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="col-12 col-sm-4 col-lg-4 mb-5 d-flex justify-content-center"
-          >
-            <div class="card h-100">
-              <img
-                src="../images/contactos/LecadaPalmeira.png"
-                class="card-img-top img-fluid"
-                alt="Leça da Palmeira"
-              />
-              <div class="card-body text-start bg-white">
-                <div class="card-title">
-                  <h5 class="h5 fw-bold mt-1">Leça da Palmeira</h5>
-                </div>
-                <div class="card-address">
-                  <p class="address">
-                    <i class="bi bi-pin-map me-2"></i
-                    ><span
-                      >Av Dr. António Macedo, Edificio AEP - Formação
-                      Profissional 4450-617 Leça da Palmeira</span
-                    >
-                  </p>
-                </div>
-                <div class="card-contacts">
-                <a href="tel:+351229981975" class="contact-link contact-phone"
+            <div class="card-body">
+              <h5 class="card-title">Leça da Palmeira</h5>
+              <p class="card-text flex-grow-1">
+                <i class="bi bi-pin-map me-2"></i
+                ><span
+                  >Av Dr. António Macedo, Edificio AEP - Formação Profissional
+                  4450-617 Leça da Palmeira</span
+                >
+              </p>
+              <div class="card-contacts">
+                <a href="#" class="contact-link"
                   ><i class="bi bi-telephone"></i><span>229 981 975</span></a
-                ><br />
-                <a href="mailto:lecadapalmeira@cesae.pt" class="contact-link contact-email"
+                >
+                <a href="#" class="contact-link"
                   ><i class="bi bi-envelope"></i
                   ><span>lecadapalmeira@cesae.pt</span></a
-                ></div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="col-12 col-sm-4 col-lg-4 mb-5 d-flex justify-content-center"
-          >
-            <div class="card h-100">
-              <img
-                src="../images/contactos/MarcoDeCanaveses.png"
-                class="card-img-top img-fluid"
-                alt="Marco de Canaveses"
-              />
-              <div class="card-body text-start bg-white">
-                <div class="card-title">
-                  <h5 class="h5 fw-bold mt-1">Marco de Canaveses</h5>
-                </div>
-                <div class="card-address">
-                  <p class="address">
-                    <i class="bi bi-pin-map me-2"></i
-                    ><span
-                      >R. Visconde do Marco 197, 4630-273 Marco de
-                      Canaveses</span
-                    >
-                  </p>
-                </div>
-                <div class="card-contacts">
-                <a href="tel:+351255534268" class="contact-link contact-phone"
-                  ><i class="bi bi-telephone"></i><span>255 534 268</span></a
-                ><br />
-                <a href="mailto:marcodecanaveses@cesae.p" class="contact-link contact-email"
-                  ><i class="bi bi-envelope"></i
-                  ><span>marcodecanaveses@cesae.pt</span></a
-                ></div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="col-12 col-sm-4 col-lg-4 mb-5 d-flex justify-content-center"
-          >
-            <div class="card h-100">
-              <img
-                src="../images/contactos/VilaDoConde.png"
-                class="card-img-top img-fluid"
-                alt="Vila do Conde"
-              />
-              <div class="card-body text-start bg-white">
-                <div class="card-title">
-                  <h5 class="h5 fw-bold mt-1">Vila do Conde</h5>
-                </div>
-                <div class="card-address">
-                  <p class="address">
-                    <i class="bi bi-pin-map me-2"></i
-                    ><span>Av. Júlio Graça 558, 4480-672 Vila do Conde</span>
-                  </p>
-                </div>
-                <div class="card-contacts">
-                <a href="tel:+351252638018" class="contact-link contact-phone"
-                  ><i class="bi bi-telephone"></i><span>252 638 018</span></a
-                ><br />
-                <a href="mailto:viladoconde@cesae.pt" class="contact-link contact-email"
-                  ><i class="bi bi-envelope"></i
-                  ><span>viladoconde@cesae.pt</span></a
-                ></div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="col-12 col-sm-4 col-lg-4 mb-5 d-flex justify-content-center"
-          >
-            <div class="card h-100">
-              <img
-                src="../images/contactos/Viseu.png"
-                class="card-img-top img-fluid"
-                alt="Viseu"
-              />
-              <div class="card-body text-start bg-white">
-                <div class="card-title">
-                  <h5 class="h5 fw-bold mt-1">Viseu</h5>
-                </div>
-                <div class="card-address">
-                  <p class="address">
-                    <i class="bi bi-pin-map me-2"></i
-                    ><span
-                      >Rua Almirante Afonso Cerqueira, 30 3510-007 Viseu</span
-                    >
-                  </p>
-                </div>
-                <div class="card-contacts">
-                <a href="tel:+351232432217" class="contact-link contact-phone"
-                  ><i class="bi bi-telephone"></i><span>232 432 217</span></a
-                ><br />
-                <a href="mailto:viseu@cesae.pt" class="contact-link contact-email"
-                  ><i class="bi bi-envelope"></i
-                  ><span>viseu@cesae.pt</span></a
-                ></div>
+                >
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </div>
-    <!-- footer -->
+        <div class="col">
+          <div class="card border-0 h-100">
+            <img
+              src="../images/contactos/MarcoDeCanaveses.png"
+              class="card-img-top polo-img"
+              alt="Marco de Canaveses"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Marco de Canaveses</h5>
+              <p class="card-text flex-grow-1">
+                <i class="bi bi-pin-map me-2"></i
+                ><span
+                  >R. Visconde do Marco 197, 4630-273 Marco de Canaveses</span
+                >
+              </p>
+              <div class="card-contacts">
+                <a href="#" class="contact-link"
+                  ><i class="bi bi-telephone"></i><span>255 534 268</span></a
+                >
+                <a href="#" class="contact-link"
+                  ><i class="bi bi-envelope"></i
+                  ><span>marcodecanaveses@cesae.pt</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0 h-100">
+            <img
+              src="../images/contactos/VilaDoConde.png"
+              class="card-img-top polo-img"
+              alt="Vila do Conde"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Vila do Conde</h5>
+              <p class="card-text flex-grow-1">
+                <i class="bi bi-pin-map me-2"></i
+                ><span>Av. Júlio Graça 558, 4480-672 Vila do Conde</span>
+              </p>
+              <div class="card-contacts">
+                <a href="#" class="contact-link"
+                  ><i class="bi bi-telephone"></i><span>252 638 018</span></a
+                >
+                <a href="#" class="contact-link"
+                  ><i class="bi bi-envelope"></i
+                  ><span>viladoconde@cesae.pt</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0 h-100">
+            <img
+              src="../images/contactos/Viseu.png"
+              class="card-img-top polo-img"
+              alt="Viseu"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Viseu</h5>
+              <p class="card-text flex-grow-1">
+                <i class="bi bi-pin-map me-2"></i
+                ><span>Rua Almirante Afonso Cerqueira, 30 3510-007 Viseu</span>
+              </p>
+              <div class="card-contacts">
+                <a href="tel:+351232432217" class="contact-link"
+                  ><i class="bi bi-telephone"></i><span>232 432 217</span></a
+                >
+                <a href="#" class="contact-link"
+                  ><i class="bi bi-envelope"></i><span>viseu@cesae.pt</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer class="footer-cesae pt-5 pb-3">
       <div class="container">
         <div class="row g-4">
-          <!-- Logo + descrição -->
           <div class="col-12 col-md-6 col-lg-3">
             <a href="../index.html" class="footer-logo">
               <img
@@ -477,70 +123,68 @@
               qualificação.
             </p>
           </div>
-
-          <!-- Links: col 1 -->
-          <div class="col-6 col-md-3 col-lg-3 ps-lg-5">
+          <div class="col-6 col-md-3 ps-lg-5">
             <h5>Formação</h5>
             <ul class="list-unstyled">
-              <li><a href="#">Cursos</a></li>
-              <li><a href="#">Projetos</a></li>
-              <li><a href="#">Serviços</a></li>
+              <li><a href="../pages/cursos.html">Cursos</a></li>
+              <li><a href="../pages/maintenance.html">Projetos</a></li>
+              <li><a href="../pages/maintenance.html">Serviços</a></li>
             </ul>
           </div>
-
-          <!-- Links: col 2 -->
-          <div class="col-6 col-md-3 col-lg-3">
+          <div class="col-6 col-md-3">
             <h5>Institucional</h5>
             <ul class="list-unstyled">
-              <li><a href="#">Cesae digital</a></li>
-              <li><a href="parceiros.html">Parceiros</a></li>
-              <li><a href="#">Contactos</a></li>
+              <li><a href="../index.html">Cesae digital</a></li>
+              <li><a href="../pages/parceiros.html">Parceiros</a></li>
+              <li><a href="../pages/contactos.html">Contactos</a></li>
             </ul>
           </div>
-
-          <!-- Contactos -->
           <div class="col-12 col-md-6 col-lg-3">
             <h5>Contactos</h5>
             <ul class="list-unstyled texto-suave">
               <li>Telefone 226 195 200</li>
               <li>Email geral@cesae.pt</li>
             </ul>
-            <!-- Redes sociais -->
             <div class="d-flex gap-3 fs-4">
               <a
                 href="https://pt.linkedin.com/school/cesae-digital/"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="LinkedIn"
                 ><i class="bi bi-linkedin"></i
               ></a>
               <a
                 href="https://www.instagram.com/cesae.digital/"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Instagram"
                 ><i class="bi bi-instagram"></i
               ></a>
               <a
                 href="https://www.youtube.com/@cesaedigital"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="YouTube"
                 ><i class="bi bi-youtube"></i
               ></a>
               <a
                 href="https://www.facebook.com/CesaeDigital"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Facebook"
                 ><i class="bi bi-facebook"></i
               ></a>
             </div>
           </div>
         </div>
-
         <hr class="footer-linha my-4" />
-
-        <!-- Linha final -->
         <div
           class="d-flex flex-column flex-md-row justify-content-between gap-2 small"
         >
           <span class="texto-suave">© 2026 CESAE Digital.</span>
           <div class="d-flex gap-3">
-            <a href="#">Política de privacidade</a>
-            <a href="#">Termos e condições</a>
+            <a href="../pages/maintenance.html">Política de privacidade</a>
+            <a href="../pages/maintenance.html">Termos e condições</a>
           </div>
         </div>
       </div>
