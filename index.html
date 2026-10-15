@@ -4,45 +4,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Pagina Web - Homepage</title>
+    <!-- Descrição para Motores de Busca (SEO) -->
     <meta
       name="description"
       content="Descubra os cursos em destaque do CESAE Digital, com datas de início e carga horária, e encontre a formação em tecnologias de informação mais adequada ao seu percurso."
     />
+    <!-- Indica que o conteúdo partilhado é um site/página web. -->
     <meta property="og:type" content="website" />
+    <!-- Define o idioma e a região do site -->
     <meta property="og:locale" content="pt_PT" />
+    <!-- O nome principal da marca ou site que aparece na pré-visualização. -->
     <meta property="og:site_name" content="CESAE Digital" />
+    <!-- O título em destaque que aparece na caixa de partilha. -->
     <meta property="og:title" content="Pagina Web - Homepage" />
+    <!-- O texto descritivo que acompanha a pré-visualização na rede social. -->
     <meta
       property="og:description"
       content="Descubra os cursos em destaque do CESAE Digital, com datas de início e carga horária, e encontre a formação em tecnologias de informação mais adequada ao seu percurso."
     />
+    <!-- 1. Pré-conexão para acelerar o carregamento -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- 2. Importação oficial da fonte Inter do Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Ícone CESAE no browser -->
     <link
       rel="icon"
       type="image/svg+xml"
       href="images/logo/favicon-cesae.svg"
     />
+    <!--***************************Chamadas de CSSs***************************-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <!--***************************FIM. Chamadas de CSSs***************************-->
   </head>
   <body>
     <header class="d-flex flex-column vh-100">
+      <!--***************************NAVBAR***************************-->
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
+          <!-- Logo CESAE Navbar -->
           <a class="navbar-brand navbar-logo me-lg-5" href="index.html">
             <img
               src="images/logo/logo_letras_brancas.svg"
               alt="CESAE Digital"
             />
           </a>
+          <!-- Hamburger Menu -->
           <button
             type="button"
             class="navbar-toggler"
@@ -51,6 +73,7 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+          <!-- FIM. Hamburger Menu -->
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav align-items-lg-center gap-2 gap-lg-3">
               <li class="nav-item">
@@ -65,6 +88,7 @@
                 <a class="nav-link" href="pages/contactos.html">Contactos</a>
               </li>
             </ul>
+            <!-- Barra de Procura -->
             <div
               class="d-flex ms-lg-auto mt-3 mt-lg-0 navbar-search"
               role="search"
@@ -86,13 +110,16 @@
           </div>
         </div>
       </nav>
+      <!--***************************FIM. NAVBAR***************************-->
 
+      <!--***************************Carrossel***************************-->
       <div
         id="carouselExampleInterval"
         class="carousel slide flex-grow-1 overflow-hidden"
         data-bs-ride="carousel"
       >
         <div class="carousel-inner h-100">
+          <!-- 1ª Imagem do Carrossel -->
           <div class="carousel-item active h-100" data-bs-interval="5000">
             <img
               src="images/carrossel/imagem1.jpg"
@@ -103,6 +130,7 @@
               Partilhar ideias. Crescer em equipa.
             </div>
           </div>
+          <!-- 2ª Imagem do Carrossel -->
           <div class="carousel-item h-100" data-bs-interval="5000">
             <img
               src="images/carrossel/imagem2.jpg"
@@ -113,6 +141,7 @@
               Transforma ideias em código.
             </div>
           </div>
+          <!-- 3ª Imagem do Carrossel -->
           <div class="carousel-item h-100" data-bs-interval="5000">
             <img
               src="images/carrossel/imagem3.jpg"
@@ -123,6 +152,7 @@
               Segurança digital, sempre.
             </div>
           </div>
+          <!-- 4ª Imagem do Carrossel -->
           <div class="carousel-item h-100" data-bs-interval="5000">
             <img
               src="images/carrossel/imagem4.jpg"
@@ -133,6 +163,7 @@
               Experiência que inspira.
             </div>
           </div>
+          <!-- 5ª Imagem do Carrossel -->
           <div class="carousel-item h-100" data-bs-interval="5000">
             <img
               src="images/carrossel/imagem5.jpg"
@@ -143,6 +174,7 @@
               Domina as redes. Liga possibilidades.
             </div>
           </div>
+          <!-- 6ª Imagem do Carrossel -->
           <div class="carousel-item h-100" data-bs-interval="5000">
             <img
               src="images/carrossel/imagem6.jpg"
@@ -154,6 +186,7 @@
             </div>
           </div>
         </div>
+        <!-- Botao "Anterior" do Carrossel" -->
         <button
           class="carousel-control-prev"
           type="button"
@@ -163,6 +196,7 @@
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Anterior</span>
         </button>
+        <!-- Botao "Seguinte" do Carrossel" -->
         <button
           class="carousel-control-next"
           type="button"
@@ -173,10 +207,13 @@
           <span class="visually-hidden">Seguinte</span>
         </button>
       </div>
+      <!--***************************FIM. Carrossel***************************-->
     </header>
 
+    <!--***************************Cards dos Cursos***************************-->
     <div class="container-fluid mt-3 mb-5">
       <div class="row g-4 cursos-row">
+        <!-- 1º Card de Cursos -->
         <div class="col-12 col-md">
           <div class="card border-0 h-100">
             <img
@@ -195,6 +232,7 @@
             </div>
           </div>
         </div>
+        <!-- 2º Card de Cursos -->
         <div class="col-12 col-md">
           <div class="card border-0 h-100">
             <img
@@ -211,6 +249,7 @@
             </div>
           </div>
         </div>
+        <!-- 3º Card de Cursos -->
         <div class="col-12 col-md">
           <div class="card border-0 h-100">
             <img
@@ -229,6 +268,7 @@
             </div>
           </div>
         </div>
+        <!-- 4º Card de Cursos -->
         <div class="col-12 col-md">
           <div class="card border-0 h-100">
             <img
@@ -247,6 +287,7 @@
             </div>
           </div>
         </div>
+        <!-- 5º Card de Cursos -->
         <div class="col-12 col-md">
           <div class="card border-0 h-100">
             <img
@@ -265,12 +306,12 @@
         </div>
       </div>
     </div>
+    <!--***************************Fim. Cards dos Cursos***************************-->
 
     <!--***************************Footer***************************-->
     <footer class="footer-cesae pt-5 pb-3">
       <div class="container">
         <div class="row g-4">
-          <!-- Logo + descrição -->
           <div class="col-12 col-md-6 col-lg-3">
             <a href="index.html" class="footer-logo">
               <img
@@ -348,7 +389,6 @@
 
         <hr class="footer-linha my-4" />
 
-        <!-- Linha final -->
         <div
           class="d-flex flex-column flex-md-row justify-content-between gap-2 small"
         >
@@ -360,7 +400,7 @@
         </div>
       </div>
     </footer>
-    <!--***************************Fim do Footer***************************-->
+    <!--***************************FIM. Footer***************************-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
