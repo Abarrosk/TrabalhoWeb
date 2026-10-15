@@ -1,3 +1,7 @@
+/* ============================================================
+   Geral (variaveis e body - todas as paginas)
+   ============================================================ */
+
 :root {
   --bg: #1c0d2e;
   --dark-purple: #2a1545;
@@ -18,6 +22,10 @@ body {
   color: var(--text);
   font-family: "Inter", sans-serif;
 }
+
+/* ============================================================
+   Navbar
+   ============================================================ */
 
 .navbar {
   background-color: var(--dark-purple);
@@ -45,7 +53,7 @@ body {
   border-radius: 5px;
   box-shadow: 0 0 14px var(--shadow2);
   transition:
-    background 0.2s,
+    background-color 0.2s,
     box-shadow 0.2s;
 }
 
@@ -114,6 +122,22 @@ body {
   color: #fff;
 }
 
+@media (min-width: 992px) {
+  .navbar-search {
+    width: 340px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    margin-top: 0.75rem;
+  }
+}
+
+/* ============================================================
+   Footer
+   ============================================================ */
+
 .footer-cesae {
   background: var(--dark-purple);
   border-top: 1px solid var(--purple);
@@ -155,6 +179,14 @@ body {
   margin-bottom: 0.5rem;
 }
 
+/* ============================================================
+   Partilhado -> Base dos Cards
+   Usado por: Index.html -> Cards dos Cursos,
+              Cursos.html -> Cards dos Cursos,
+              Contactos.html -> Polos de Aprendizagem do CESAE
+   (.card e .card-body tambem em Contactos.html -> Formulario)
+   ============================================================ */
+
 .card {
   padding: 0;
 }
@@ -178,6 +210,7 @@ body {
   color: var(--text);
   opacity: 0.75;
   text-decoration: none;
+  font-size: 0.9rem;
 }
 
 .card-body a {
@@ -190,6 +223,13 @@ body {
   opacity: 1;
 }
 
+/* ============================================================
+   Partilhado -> Introducao das paginas
+   Usado por: Cursos.html -> Cards dos Cursos,
+              Parceiros.html -> Listagem de Parcerias,
+              Contactos.html -> Introducao e Polos de Aprendizagem do CESAE
+   ============================================================ */
+
 .cursos-intro,
 .parceiros-intro,
 .contactos-intro {
@@ -198,10 +238,51 @@ body {
   opacity: 0.8;
 }
 
-.display-4,
-.lead {
-  color: var(--lilac);
+/* ============================================================
+   Partilhado -> Forma, transicao e hover dos Cards
+   Forma (border-radius/overflow): Cursos.html -> Cards dos Cursos,
+      Contactos.html -> Polos de Aprendizagem do CESAE, Contactos.html -> Formulario
+   Transicao, hover e reduced-motion: Cursos.html -> Cards dos Cursos,
+      Contactos.html -> Polos de Aprendizagem do CESAE
+   ============================================================ */
+
+.cursos-grid .card,
+.polos-grid .card,
+.form-card {
+  border-radius: 1rem;
+  overflow: hidden;
 }
+
+.cursos-grid .card,
+.polos-grid .card {
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.cursos-grid .card:hover,
+.polos-grid .card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 12px 28px var(--shadow1),
+    0 0 0 4px var(--shadow2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursos-grid .card,
+  .polos-grid .card {
+    transition: none;
+  }
+
+  .cursos-grid .card:hover,
+  .polos-grid .card:hover {
+    transform: none;
+  }
+}
+
+/* ============================================================
+   Index.html -> Carrossel
+   ============================================================ */
 
 .carousel-texto {
   color: var(--text);
@@ -225,6 +306,56 @@ body {
 #carouselExampleInterval .carousel-control-next-icon {
   filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.7));
 }
+
+/* ============================================================
+   Index.html -> Cards dos Cursos
+   (base dos cards em "Partilhado -> Base dos Cards")
+   ============================================================ */
+
+@media (min-width: 768px) {
+  @supports (grid-template-rows: subgrid) {
+    .cursos-row {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+
+    .cursos-row > .col-md {
+      display: grid;
+      grid-row: span 5;
+      grid-template-rows: subgrid;
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+    .cursos-row .card {
+      display: grid;
+      grid-row: 1 / -1;
+      grid-template-rows: subgrid;
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+    .cursos-row .card-body {
+      display: grid;
+      grid-row: 2 / -1;
+      grid-template-rows: subgrid;
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+    .cursos-row .card-title {
+      overflow-wrap: break-word;
+    }
+
+    .cursos-row .card-body a {
+      margin-top: 0;
+      align-self: start;
+      justify-self: start;
+    }
+  }
+}
+
+/* ============================================================
+   Cursos.html -> Cards dos Cursos
+   (base dos cards, forma/transicao/hover e introducao em blocos "Partilhado")
+   ============================================================ */
 
 .btn-filtro {
   color: var(--text);
@@ -265,28 +396,6 @@ body:has(#f-ia:checked) .cursos-grid > :not([data-categoria="ia"]) {
   display: none;
 }
 
-.cursos-grid .card,
-.polos-grid .card,
-.form-card {
-  border-radius: 1rem;
-  overflow: hidden;
-}
-
-.cursos-grid .card,
-.polos-grid .card {
-  transition:
-    transform 0.3s,
-    box-shadow 0.3s;
-}
-
-.cursos-grid .card:hover,
-.polos-grid .card:hover {
-  transform: translateY(-6px);
-  box-shadow:
-    0 12px 28px var(--shadow1),
-    0 0 0 4px var(--shadow2);
-}
-
 .curso-img {
   position: relative;
   height: 200px;
@@ -319,6 +428,11 @@ body:has(#f-ia:checked) .cursos-grid > :not([data-categoria="ia"]) {
   text-transform: uppercase;
   color: var(--blue);
 }
+
+/* ============================================================
+   Parceiros.html -> Listagem de Parcerias
+   (introducao em "Partilhado -> Introducao das paginas")
+   ============================================================ */
 
 .logo-tile {
   display: flex;
@@ -355,12 +469,28 @@ body:has(#f-ia:checked) .cursos-grid > :not([data-categoria="ia"]) {
   transform: scale(1.08);
 }
 
+/* ============================================================
+   Contactos.html -> Introducao
+   (sem regras proprias: usa .contactos-intro de "Partilhado -> Introducao das paginas")
+   ============================================================ */
+
+/* ============================================================
+   Contactos.html -> Formulario
+   (.card, .card-body e forma do card em blocos "Partilhado")
+   ============================================================ */
+
 .contacto-img {
   display: block;
   width: 100%;
   height: 240px;
   object-fit: cover;
   border-radius: 1rem;
+}
+
+@media (min-width: 992px) {
+  .contacto-img {
+    height: 300px;
+  }
 }
 
 .form-card .card-body {
@@ -429,6 +559,11 @@ body:has(#f-ia:checked) .cursos-grid > :not([data-categoria="ia"]) {
   opacity: 1;
 }
 
+/* ============================================================
+   Contactos.html -> Polos de Aprendizagem do CESAE
+   (base dos cards, forma/transicao/hover e .contactos-intro em blocos "Partilhado")
+   ============================================================ */
+
 .polo-img {
   width: 100%;
   height: 140px;
@@ -447,70 +582,11 @@ body:has(#f-ia:checked) .cursos-grid > :not([data-categoria="ia"]) {
   margin-right: 0.5rem;
 }
 
-@media (min-width: 768px) {
-  @supports (grid-template-rows: subgrid) {
-    .cursos-row {
-      display: grid;
-      grid-template-columns: repeat(5, minmax(0, 1fr));
-    }
+/* ============================================================
+   Maintenance.html -> Pagina em Manutencao
+   ============================================================ */
 
-    .cursos-row > .col-md {
-      display: grid;
-      grid-row: span 5;
-      grid-template-rows: subgrid;
-      grid-template-columns: minmax(0, 1fr);
-    }
-
-    .cursos-row .card {
-      display: grid;
-      grid-row: 1 / -1;
-      grid-template-rows: subgrid;
-      grid-template-columns: minmax(0, 1fr);
-    }
-
-    .cursos-row .card-body {
-      display: grid;
-      grid-row: 2 / -1;
-      grid-template-rows: subgrid;
-      grid-template-columns: minmax(0, 1fr);
-    }
-
-    .cursos-row .card-title {
-      overflow-wrap: break-word;
-    }
-
-    .cursos-row .card-body a {
-      margin-top: 0;
-      align-self: start;
-      justify-self: start;
-    }
-  }
-}
-
-@media (min-width: 992px) {
-  .navbar-search {
-    width: 340px;
-  }
-
-  .contacto-img {
-    height: 300px;
-  }
-}
-
-@media (max-width: 991.98px) {
-  .navbar-collapse {
-    margin-top: 0.75rem;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .cursos-grid .card,
-  .polos-grid .card {
-    transition: none;
-  }
-
-  .cursos-grid .card:hover,
-  .polos-grid .card:hover {
-    transform: none;
-  }
+.display-4,
+.lead {
+  color: var(--lilac);
 }

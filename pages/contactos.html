@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Pagina Web - Contactos</title>
+
     <meta
       name="description"
       content="Entre em contacto com o CESAE Digital através do formulário ou consulte a morada, o telefone e o email de cada polo: Porto, São João da Madeira, Leça da Palmeira, Marco de Canaveses, Vila do Conde e Viseu."
@@ -16,11 +17,20 @@
       property="og:description"
       content="Entre em contacto com o CESAE Digital através do formulário ou consulte a morada, o telefone e o email de cada polo: Porto, São João da Madeira, Leça da Palmeira, Marco de Canaveses, Vila do Conde e Viseu."
     />
+    <!-- -------------------------------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- -------------------------------------------- -->
     <link
       rel="icon"
       type="image/svg+xml"
       href="../images/logo/favicon-cesae.svg"
     />
+    <!-- -------------------------------------------- -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -32,8 +42,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/styles.css" />
+    <!-- -------------------------------------------- -->
   </head>
   <body>
+    <!--***************************NAVBAR***************************-->
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand navbar-logo me-lg-5" href="../index.html">
@@ -53,15 +65,13 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav align-items-lg-center gap-2 gap-lg-3">
             <li class="nav-item">
-              <a class="nav-link nav-cursos" href="../pages/cursos.html"
-                >Cursos</a
-              >
+              <a class="nav-link nav-cursos" href="cursos.html">Cursos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../pages/parceiros.html">Parceiros</a>
+              <a class="nav-link" href="parceiros.html">Parceiros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../pages/contactos.html">Contactos</a>
+              <a class="nav-link" href="contactos.html">Contactos</a>
             </li>
           </ul>
           <div
@@ -85,6 +95,9 @@
         </div>
       </div>
     </nav>
+    <!--***************************FIM. NAVBAR***************************-->
+
+    <!--******************************************************-->
     <section class="container py-5">
       <h1 class="h2 mb-2">Contactos</h1>
       <p class="contactos-intro mb-0">
@@ -92,6 +105,9 @@
         encontrar a formação mais adequada aos seus objetivos profissionais.
       </p>
     </section>
+    <!--***************************FIM.***************************-->
+
+    <!--**********************FORMULARIO********************************-->
     <section class="container pb-5">
       <div class="row g-4 align-items-start">
         <div class="col-12 col-lg-6">
@@ -214,6 +230,9 @@
         </div>
       </div>
     </section>
+    <!--***************************FIM. FORMULARIO***************************-->
+
+    <!--*************************POLOS de Aprendizagem do CESAE*****************************-->
     <section class="container pb-5">
       <h2 class="h3 mb-2">Os nossos Polos</h2>
       <p class="contactos-intro mb-4">
@@ -379,6 +398,8 @@
         </div>
       </div>
     </section>
+    <!--***************************FIM. POLOS de Aprendizagem do CESAE***************************-->
+
     <!--***************************Footer***************************-->
     <footer class="footer-cesae pt-5 pb-3">
       <div class="container">
@@ -402,9 +423,9 @@
           <div class="col-6 col-md-3 col-lg-3 ps-lg-5">
             <h5>Formação</h5>
             <ul class="list-unstyled">
-              <li><a href="/pages/cursos.html">Cursos</a></li>
-              <li><a href="/pages/maintenance.html">Projetos</a></li>
-              <li><a href="/pages/maintenance.html">Serviços</a></li>
+              <li><a href="cursos.html">Cursos</a></li>
+              <li><a href="maintenance.html">Projetos</a></li>
+              <li><a href="maintenance.html">Serviços</a></li>
             </ul>
           </div>
 
@@ -412,9 +433,9 @@
           <div class="col-6 col-md-3 col-lg-3">
             <h5>Institucional</h5>
             <ul class="list-unstyled">
-              <li><a href="/index.html">Cesae digital</a></li>
-              <li><a href="/pages/parceiros.html">Parceiros</a></li>
-              <li><a href="/pages/contactos.html">Contactos</a></li>
+              <li><a href="../index.html">Cesae digital</a></li>
+              <li><a href="parceiros.html">Parceiros</a></li>
+              <li><a href="contactos.html">Contactos</a></li>
             </ul>
           </div>
 
@@ -467,12 +488,13 @@
         >
           <span class="texto-suave">© 2026 CESAE Digital.</span>
           <div class="d-flex gap-3">
-            <a href="/pages/maintenance.html">Política de privacidade</a>
-            <a href="/pages/maintenance.html">Termos e condições</a>
+            <a href="maintenance.html">Política de privacidade</a>
+            <a href="maintenance.html">Termos e condições</a>
           </div>
         </div>
       </div>
     </footer>
+    <!--***************************Fim do Footer***************************-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
